@@ -404,13 +404,29 @@ figure{
     position: relative;
   }
 
-  #Table_SAE tr figure {
-    margin: 0;
-  }
-
   #Table_SAE tr :first-child img{
     width: 40%; height: 40%;
   }
+
+
+  
+
+  .container {
+    margin: 0;
+
+    position: relative;
+
+    display: flex;  flex-direction: column; justify-content: center; vertical-align: middle;
+    
+    transition: 0.3s;
+  }
+
+  .container img{
+    width: 40%; height: 40%;
+
+    margin: auto;
+  }
+
 
   .Project_Links{
     padding: 1.5vh;
@@ -434,10 +450,13 @@ figure{
     opacity: 1;
   }
 
-  #Table_SAE td:hover {
+  #Table_SAE td:hover img{
     filter: opacity(50%);
   }
 
+  #Table_SAE td:hover span{
+    filter: opacity(50%);
+  }
 
 
 
@@ -449,32 +468,3 @@ figure{
 
 /*------------------- Fin du MAIN -------------------*/
 
-.container {
-  position: relative;
-  width: 100%;
-}
-
-.container img {
-  width: 100%;
-  height: auto;
-}
-
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.container .btn:hover {
-  background-color: black;
-}
