@@ -165,7 +165,9 @@ figure{
     background-color: transparent;
     
     font-size: 4.5vh;  color: white;
-
+    position: relative;
+    top: 0;
+    
     transition: .4s ease-in-out;
 
     cursor: pointer;

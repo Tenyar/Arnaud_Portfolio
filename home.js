@@ -11,7 +11,7 @@ var x = document.getElementById("myTopnav");
 }
 
 // ----------------- SCRIPT FOR FADING IMAGE ---------------------
-
+/*
 var test = document.getElementById('hero-image');
 window.addEventListener('scroll', function(e) {
   // http://stackoverflow.com/a/28633515/962603 [DOCUMENTATION ON THE FUNCTION]
@@ -19,12 +19,13 @@ window.addEventListener('scroll', function(e) {
                 document.body.scrollTop || 0;
   test.style.opacity = Math.max(0, Math.min(1, -scroll / 300 + 2));
 });
-
+*/
 
 // ----------------- SCRIPT FOR DROPDOWN MENU ---------------------
 
     /* When the user clicks on the button, 
               toggle between hiding and showing the dropdown content */
+              /*
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -42,6 +43,6 @@ window.addEventListener('scroll', function(e) {
       }
     }
   }
-
+*/
 
   // ----------------- SCRIPT FOR ANIMATED ELEMENT ON SCROLL -----------------
