@@ -103,7 +103,7 @@ img{
     font-family: inherit;
     margin: 0;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -303,7 +303,7 @@ img{
 
   
 @media screen and (max-width: 920px) {
-  .Table_SAE {flex-wrap: wrap; border-left: 0.1vh solid black; border-right: 0.1vh solid black;}
+  .Table_SAE {flex-wrap: wrap; border-left: 0.1vh solid black; border-right: 0.1vh solid black;  font-size: 0.75em;}
 }
 /* Delete Right border of the first <td> in each <tr> */
 
@@ -410,6 +410,7 @@ height: 100%;
 }
 
 .Wrap_container p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 3% 3% 3% 0;
   margin: 0;
   letter-spacing: 1px;
@@ -424,8 +425,129 @@ height: 100%;
   width: 100%;
 }
 
+#Last_Wrap span {
+  border-radius: 1em;
+  padding: 0.5%;
+  background-color: #f6de07; color: rgb(33, 33, 33);
+}
+
 /* ---- END A PROPOS DE MOI PART ---- */
 
 
  /*------------------- End of Main -------------------*/
 
+ /*------------------- START of FOOTER -------------------*/
+
+ footer {
+  margin: 0 10% 0 10%;
+ }
+
+ @media screen and (min-width: 2500px) {
+  footer {margin: 0 30% 0 30%;}
+}
+
+  #redirection{
+    position: relative;
+    margin: 5% 10% 0 10%;
+
+    border-top: 1px solid black;
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  #redirection ul{
+    padding: 0;
+    margin: 0;
+  }
+  /* a (LINKS) */
+
+  #Links_redirect {
+   display: flex; flex-direction: row;  justify-content: space-around;
+   list-style-type: none;
+  }
+
+  #Links_redirect li {
+    margin: 2% 0 5% 0;
+    height: fit-content;
+    transition: 0.3s;
+    margin-bottom: 1%;
+  }
+
+  #redirection a{
+    display: block;
+    margin: 0;
+    width: fit-content; height: 50px;
+  }
+
+  #redirection img{
+    width: 50px;  height: 50px;
+  }
+
+  /* TEXT */
+
+  #redirection span{
+    text-align: center;
+    margin: 2% 0 4% 0;
+  }
+
+  /* HOVER */
+
+  #redirection a:hover img{
+    text-shadow: 2px 2px;
+  }
+
+  #Links_redirect a:hover{
+    border-radius: 5em;
+    box-shadow: 10px 10px 5px #00000084;
+    -moz-box-shadow: 0px 5px 5px #00000084;
+    -webkit-box-shadow: 0px 5px 5px #00000084;     
+  }
+
+
+  /* On hover display text */
+  .tooltiptext{
+    padding: 0.25em 0.5em;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+
+    background-color: black; color: #fff;
+    border-radius: 0.25em;
+    
+    /* Position the tooltip */
+    position: absolute; top: -25%;
+    z-index: 1;
+    
+    transform: translate(-40%, -50%);
+    transition-property: visibility;
+    transition-delay: 0s;
+    transition: 0.3s;
+
+    user-select: none;
+  }
+  /* Spike (triangle) at the bottom center of the tip text */
+  .tooltiptext::after{
+    content: ''; /* need a content to fill*/
+    position: absolute;
+    left: 42%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #000000;
+    clear: both;
+}
+
+  #redirection li:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+ /*------------------- End of FOOTER -------------------*/
+ 
