@@ -15,15 +15,15 @@
                 
       <header>
 
-        <div class="Nav_Bar">
+        <div class="Nav_Bar" id="myTopnav">
 
           <a href="#home" class="active">Acceuil</a>
           
           <div class="dropdown">
 
-            <button class="dropbtn">Mes projets ↓<i class="fa fa-caret-down"></i></button>
+            <button class="dropbtn" type="button" onclick="ShowInsideDropdownContent()">Mes projets ↓<i class="fa fa-caret-down"></i></button>
             
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="first_dropdown"> <!-- l'identifiant est pour la fonction javaScript. -->
 
               <a href="#">Première année</a>
               <a href="#">Deuxième année</a>
@@ -36,7 +36,7 @@
 
           <a href="#contact">Me contacter</a>
 
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
           
         </div>
 

@@ -1,15 +1,30 @@
   // ----------------- SCRIPT FOR RESPONSIVE NAV BAR ---------------------
 // Fonction pour le boutton pour dérouler le burger menu [Dropdown]
 
-function myFunction() {
+function ShowDropdownContent() {
+
 var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+
+    if (x.className === "Nav_Bar") {
+
         x.className += " responsive";
+
     } else {
-        x.className = "topnav";
+
+        x.className = "Nav_Bar";
+
     }
 }
 
+// Fonction pour montrer le contenu d'un "burger-menu" / Dropdown / menu déroulant.
+
+var isHidden = true; // The dropDown content
+
+function ShowInsideDropdownContent() {
+
+  document.getElementById("first_dropdown").classList.toggle("show");
+
+  }
 // ----------------- SCRIPT FOR FADING IMAGE ---------------------
 /*
 var test = document.getElementById('hero-image');
