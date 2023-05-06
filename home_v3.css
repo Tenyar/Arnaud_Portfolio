@@ -77,6 +77,8 @@ img{
   .Nav_Bar a {
     display: block;
 
+    cursor: pointer;
+
     padding: 14px 16px;
 
     float: left;
@@ -95,15 +97,20 @@ img{
   
   .Nav_Bar .icon {
     display: none;
+
+    cursor: pointer;
   }
   
   .dropdown {
     float: left;
+
     overflow: hidden;
   }
   
   .dropdown .dropbtn {
     margin: 0; padding: 14px 16px;
+
+    cursor: pointer;
     
     border: none;
 
