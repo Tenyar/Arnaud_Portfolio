@@ -4,15 +4,16 @@
 
 function ShowDropdownContent() {
 
-var x = document.getElementById("myTopnav");
+var x = document.getElementById("myTopnav"); // variable pour facilité l'accès à l'identifiant du premier élément dans le header.
 
-    if (x.className === "Nav_Bar") {
+    if (x.className === "Nav_Bar") { // Si le nom de la classe est Nav_Bar (dans le css)
 
-        x.className += " responsive";
+      // Rajoute .responsive dans le nom de la classe.
+        x.className += "responsive"; // Activer le responsive / Activer le css qui permet d'adapter le header.
 
     } else {
-
-        x.className = "Nav_Bar";
+      // Sinon reviens à l'état d'origine.
+        x.className = "Nav_Bar"; // 
 
     }
 }
@@ -31,13 +32,13 @@ function ShowInsideDropdownContent() {
   // Ferme le menu déroulant quand l'utilisateur clique en dehors de lui.
 window.onclick = function(event) {
 
-    if (!event.target.matches('.dropbtn')) { // Si le click est en dehors du bouton
+    if (!event.target.matches('.dropbtn')) { // Si le clic est en dehors du bouton.
 
-    var first_dropdown = document.getElementById("first_dropdown"); // Variable pour simplifié l'accès au menu en question
+    var first_dropdown = document.getElementById("first_dropdown"); // Variable pour simplifié l'accès au menu en question.
 
     if(first_dropdown.classList.contains('show')){ // Si le menu déroulant est activé (les éléments de celui-ci sont affichés).
       
-      first_dropdown.classList.remove("show"); // On enlève l'attribut "show" qui est activé lors du click sur le bouton
+      first_dropdown.classList.remove("show"); // On enlève l'attribut "show" qui est activé lors du click sur le bouton.
       
       //Fin de boucle le menu est fermé. (Les éléments sont cachés)
     }
@@ -46,11 +47,17 @@ window.onclick = function(event) {
 
 // ----------------- SCRIPT FOR SCROLLING TO ELEMENT ---------------------
 
-const links = document.querySelectorAll(".scroll_to");
-links.forEach((item)=>{
+const links = document.querySelectorAll(".scroll_to"); // Constante pour selectionner tout les éléments de la classe "scroll_to".
 
-  item.addEventListener("click", ()=>{
-    const el = document.getElementById(item.getAttribute("data-link"));
+links.forEach((item)=>{ // Pour chaque items
+
+  item.addEventListener("click", ()=>{ // Quand un clic est effectué sur l'item (lien <a>).
+
+    // Constante pour simplifier l'accès à l'élément qui à un identifiant pareille à celui du "data-link" du lien (<a>) cliqué. 
+
+    const el = document.getElementById(item.getAttribute("data-link")); 
+    
+    // Scroll / fait défiler vers cet élément de manière douce en s'arrêtant au début / commencement de l'élément.
     el.scrollIntoView({behavior: "smooth", block: "start"})
   })
 
