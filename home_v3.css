@@ -586,6 +586,8 @@ img{
   }
  /*------------------- End of FOOTER -------------------*/
 
+ /* ----------------- SPECIAL PART (TRIANGLE SCROLLING) OF THE HERO-IMAGE ----------------- */
+
 #Hero-image::after {
   content: '';
   position: absolute;
