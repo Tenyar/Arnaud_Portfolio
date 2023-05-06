@@ -64,12 +64,12 @@ img{
     background-color: rgba(0, 0, 0, 0.6); backdrop-filter: saturate(180%) blur(8px)!important;
   }
 
-  .topnav {
+  .Nav_Bar {
     overflow: hidden;
     background-color: #33333346;
   }
   
-  .topnav a {
+  .Nav_Bar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -84,7 +84,7 @@ img{
     color: white;
   }
   
-  .topnav .icon {
+  .Nav_Bar .icon {
     display: none;
   }
   
@@ -122,7 +122,7 @@ img{
     text-align: left;
   }
   
-  .topnav a:hover, .dropdown:hover .dropbtn {
+  .Nav_Bar a:hover, .dropdown:hover .dropbtn {
     background-color: #939393;
     color: white;
   }
@@ -137,10 +137,10 @@ img{
   }
   
   @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+    .Nav_Bar a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
-    .topnav a.icon {
+    .Nav_Bar a.icon {
       float: right;
       display: block;
     }
@@ -148,20 +148,20 @@ img{
   
   @media screen and (max-width: 600px) {
     main h1 {padding-top: 40px;} /* For keeping title in shape when the page is below 600px*/
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
+    .Nav_Bar.responsive {position: relative;}
+    .Nav_Bar.responsive .icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .topnav.responsive a {
+    .Nav_Bar.responsive a {
       float: none;
       display: block;
       text-align: left;
     }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
+    .Nav_Bar.responsive .dropdown {float: none;}
+    .Nav_Bar.responsive .dropdown-content {position: relative;}
+    .Nav_Bar.responsive .dropdown .dropbtn {
       display: block;
       width: 100%;
       text-align: left;
@@ -180,14 +180,33 @@ img{
     align-items: center;
   }
 
+  #Hero-image{
+    position: relative; top: 0;
+
+    display: flex;
+    
+    width: 100vw; height: fit-content; 
+
+    z-index: -1;
+
+  }
+
+
  #Hero-image h1 {
     padding: 20px;
+
 
     position: absolute; top: 5%; left: 50%;
     transform: translate(-50%, -50%);
 
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  font-size: 10vh;
+    
+    color: white;
+    font-size: 10vh;  font-size: 5vw; text-shadow: 0 0 5px rgb(254, 125, 44), 0 0 5px rgb(139, 116, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
   }
 
   @media screen and (max-width: 600px) {
@@ -196,16 +215,6 @@ img{
   
   #Hero-image h1 span {
     color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-  }
-
-  #Hero-image{
-    position: relative; top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    overflow: hidden;
   }
 
   #Hero-image img{
@@ -551,20 +560,8 @@ img{
     transition-delay: 0.3s;
   }
  /*------------------- End of FOOTER -------------------*/
- 
 
- #Gold_color {
-  box-shadow: inset 0 -7px 15px 0 #0d0d0d;
-
-  z-index: -1;
-  top: 3em;
-  position: absolute;
-  background: linear-gradient(to right, #fdc830, #f37335);
-  height: 50px;
-  width: 100vw;
-}
-
- #Gold_color::after {
+#Hero-image::after {
   content: '';
   position: absolute;
 
@@ -586,7 +583,6 @@ img{
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;
-
 }
 
 @keyframes Triangles {
@@ -597,64 +593,10 @@ img{
     -webkit-mask-position-x: 20vw;
   }
 }
-/* LES TRAITS (bugs quand on zoom) sont peut être du à l'image.f */
 
-#Gold_color::after{
-  bottom: 0;
-  transform: rotate(.5turn);
-}
+/* LES TRAITS (bugs quand on zoom) sont peut être du à l'image. */
 
-/*#Color_SAE {
-  z-index: -1;
-  top: 1em;
-  position: absolute;
-  background: linear-gradient(to right, #fdc830, #f37335);
-  height: 50px;
-  width: 100vw;
-}
-
- #Color_SAE::before, #Color_SAE::after {
-  content: '';
-  position: absolute;
-
-  width: 100%; height: 50px;
-
-  background-color: var(--body-bg);
-
-  user-select: none;
-
-  /* Mask part */
-  /* BASE 64 for this image because edge has a protocol, it was needed to host the iamge or to encode it to use it. (Encoded should make page loading longer be careful) */
-  /*
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCA0Ij4KICA8cGF0aCBkPSJNIDAgMCBMIDE0IDAgTCA3IDQgWiIgZmlsbD0iIzAwMDAwMCIvPgo8L3N2Zz4=);
-  -webkit-mask-size: 4vw;
-  -webkit-mask-repeat: repeat-x;*/
-
-  /* Animation part */
-  /*
-  animation-name: Triangles;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-timing-function: linear;
-
-}*/
-
-@keyframes Triangles {
-  0% {
-    -webkit-mask-position-x: 0vw;
-  }
-  100% {
-    -webkit-mask-position-x: 20vw;
-  }
-}
-/* LES TRAITS (bugs quand on zoom) sont peut être du à l'image.f */
-
-#Color_SAE::before {
-  top: 0;
-} 
-
-#Color_SAE::after{
+#Hero-image::after{
   bottom: 0;
   transform: rotate(.5turn);
 }
