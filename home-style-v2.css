@@ -529,7 +529,6 @@ figure{
     -webkit-mask-position-x: 20vw;
   }
 }
-
 /* LES TRAITS (bugs quand on zoom) sont peut être du à l'image.f */
 
 #Gold_color::before {
