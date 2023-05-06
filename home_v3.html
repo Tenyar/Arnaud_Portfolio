@@ -17,7 +17,7 @@
 
         <div class="Nav_Bar" id="myTopnav">
 
-          <a href="#home" class="active">Acceuil</a>
+          <a data-link="Hero-image" class="scroll_to">Acceuil</a>  <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
           
           <div class="dropdown">
 
@@ -25,16 +25,17 @@
             
             <div class="dropdown-content" id="first_dropdown"> <!-- l'identifiant est pour la fonction javaScript. -->
 
-              <a href="#">Première année</a>
-              <a href="#">Deuxième année</a>
-
+              <a data-link="Trans_Black_color" class="scroll_to">Première année</a><!-- La classe "Scroll_to" est pour le référencement dans le JS(javaScript) -->
+              <a data-link="section2" class="scroll_to">Deuxième année</a><!-- "data-link" est un lien vers une donnée (en outre chaque sections de la page) -->
+        
             </div>
 
           </div> 
+            <!-- le "data-link" est lié a un identifiant (id) d'une section -->
+          <a data-link="section3" class="scroll_to">À propos de moi</a> 
 
-          <a href="#about">À propos de moi</a>
-
-          <a href="#contact">Me contacter</a>
+            <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
+          <a data-link="Last_Wrap" class="scroll_to">Me contacter</a>
 
           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
           
@@ -67,7 +68,7 @@
 
             <!-- SECTION 1 -->  
 
-            <section class="Table_Main" id="Trans_Black_color" id="Gold_color">
+            <section class="Table_Main" id="Trans_Black_color">
 
                 <h1>Mes projets durant mes études</h1>
                 <h2>Première année</h2>
@@ -119,7 +120,7 @@
             <!-- SECTION 2 -->  
             <!-- Golden Color [ABSOLUTE positioning]-->    
             <div id="Color_SAE"></div>
-            <section class="Table_Main" >
+            <section class="Table_Main" id="section2">
 
                 <h2>Deuxième année</h2>
 
@@ -168,7 +169,7 @@
 
             </section>
 
-            <section Class="Wrap_container">
+            <section Class="Wrap_container" id="section3">
 
                 <h1>À propos de moi</h1>
 

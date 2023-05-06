@@ -58,6 +58,8 @@ img{
   /*------------------- Start of HEADER -------------------*/
   
   header {
+    user-select: none;
+
     position: fixed;
 
     width: 100%;
@@ -255,7 +257,7 @@ img{
   /* Text color slide animation */
 
   #first_section p {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   @media screen and (max-width: 600px) {
