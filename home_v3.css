@@ -182,7 +182,6 @@ img{
 
  #Hero-image h1 {
     padding: 20px;
-    background-color: white;
 
     position: absolute; top: 5%; left: 50%;
     transform: translate(-50%, -50%);
@@ -204,6 +203,7 @@ img{
   #Hero-image{
     position: relative; top: 0;
     width: 100vw;
+    height: 100vh;
     z-index: -1;
     overflow: hidden;
   }
@@ -259,9 +259,10 @@ img{
   }
 
   @media screen and (max-width: 600px) {
-    main > h1 {font-size: 40px;}
+    #Hero-image h1 {font-size: 40px;}
     #first_section h2 {font-size: 40px;}
     #first_section p {font-size: 20px;}
+    #first_section p a:hover{background-image: linear-gradient(30deg, black,white 50%, black 55%); background-size: 300px;}
   }
 
   /* End Text color slide animation */
