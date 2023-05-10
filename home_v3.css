@@ -582,7 +582,7 @@ img{
   #redirection li:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0.3s;
+    transition-delay: 0.3s; /* AJOUTE UN DELAI AVANT QUE LE HOVER PRENNE EFFET. */
   }
  /*------------------- End of FOOTER -------------------*/
 
