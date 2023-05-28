@@ -205,7 +205,7 @@ img{
     align-items: center;
   }
 
-  #Hero-image{
+  .Title-Hero-Image{
     position: relative; top: 0;
 
     display: flex;
@@ -217,9 +217,8 @@ img{
   }
 
 
- #Hero-image h1 {
-    padding: 20px;
-
+ .Title-Hero-Image h1 {
+    margin-top: 5%;
 
     position: absolute; top: 5%; left: 50%;
     transform: translate(-50%, -50%);
@@ -235,14 +234,14 @@ img{
   }
 
   @media screen and (max-width: 600px) {
-    #Hero-image h1 {padding-top: 40px;} /* For keeping title in shape when the page is below 600px*/
+    .Title-Hero-Image h1 {padding-top: 40px; margin-top: 10%;} /* For keeping title in shape when the page is below 600px*/
   }
   
-  #Hero-image h1 span {
+  .Title-Hero-Image h1 span {
     color: transparent;
   }
 
-  #Hero-image img{
+  .Title-Hero-Image img{
     width: 100%;
   }
 
@@ -588,7 +587,7 @@ img{
 
  /* ----------------- SPECIAL PART (TRIANGLE SCROLLING) OF THE HERO-IMAGE ----------------- */
 
-#Hero-image::after {
+ .Title-Hero-Image::after {
   content: '';
   position: absolute;
 
@@ -623,7 +622,7 @@ img{
 
 /* LES TRAITS (bugs quand on zoom) sont peut être du à l'image. */
 
-#Hero-image::after{
+.Title-Hero-Image::after{
   bottom: 0;
   transform: rotate(.5turn);
 }

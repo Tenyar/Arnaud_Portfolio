@@ -33,6 +33,7 @@ function ShowInsideDropdownContent() {
   document.getElementById("first_dropdown").classList.toggle("show");
 
 }
+
   // Ferme le menu déroulant quand l'utilisateur clique en dehors de lui.
 window.onclick = function(event) {
 

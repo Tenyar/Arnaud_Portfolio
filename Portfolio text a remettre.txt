@@ -1,0 +1,19 @@
+                            J'aime être actif, bouger, me dépenser en faisant du sport. J'ai tester pas mal de sport depuis mon plus jeune âge comme le judo,karaté,tennis,football,basketball,badminton etc... <br>
+                            J'aime aussi être tranquille et calme quand je travail, un espace de travail organisé et silencieux pour me concentrer.<br>
+                            Je suis plus du côté réservé (introvertie) mais je ne suis pas timide, je m'éxprime bien et n'a pas de mal à être en collaboration ou autres(travail d'équipe etc..). <br>
+                            J'ai commencé à m'intéresser à l'informatique depuis l'âge de 15 ans, avant je jouais un peu au jeux vidéos et codait quelques bricoles comme hobby.<br>
+                            J'aime beaucoup faire de la musique, chanté, faire de la guitar/piano. A plusieurs est encore mieux ! <br>
+                            <br>
+                            Pendant le confinement je me suis développé dans divers logiciels et sujets informatiques. <br>
+                            Les images au-dessus illustres les différents logiciels que j'ai pu maitriser au cours de ses 2 dernières années. <br>
+                            Dans l'ordre nous avons Sourcé engine. C'est un moteur permettant aux jeux de valve de fonctionner. <br>
+                            Pour mon cas dès le confinement je me suis attelé à faire du level design. J'ai appris en autodidacte comment en faire, le logiciel s'appelle "Hammer editor". <br>
+                            J'ai aussi épandu ma zone d'apprentissage du milieu vers de la 3D avec Blender (logo juste après). Je créais et texturisent mes models avec Substance painter(logo rouge). <br>
+                            Finalement j'ai appris à me servir de divers logiciels d'encodage comme Visual studio code (le dernier) ainsi qu'intellij idea. <br>
+                            <br>
+                            Au jour d'aujourd'hui je suis en BUT informatique à l'iut 2 de Grenoble. Je suis en première année. <br>
+                            J'étudie le language de programmation Java, language en assembleur (68000) ainsi que SQL et HTML/Css. <br>
+                            J'ai des projets de groupes, par exemple en Java, en SQL et en HTML/Css pour les languages <a href="mes-projets-java.html" id="page-2-p-page-3">[Vous pouvez les retrouver sur la page suivante].</a> <br>
+                            Mais aussi en gestion shell / Linux, comment peut-on parvenir à utiliser le système d'exploitation mise en place et notre autonomie dessus.<br>
+                            J'ai appris à travailler en équipe, à reléguer du travail mais aussi à en déléguer. <br>       
+
