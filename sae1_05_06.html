@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="project_v3.css"> <!-- Feuille de style principale -->
+<title>Portfolio-Kersual_Arnaud-SAE1.05_06</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+    <body>
+                
+      <header>
+
+        <div class="Nav_Bar" id="myTopnav">
+
+          <a data-link="Top-page" class="scroll_to">Introduction</a>  <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
+          
+            <!-- le "data-link" est lié a un identifiant (id) d'une section -->
+          <a data-link="section2" class="scroll_to">Début du projet</a> 
+
+            <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
+          <a data-link="section3" class="scroll_to">Conception / Wireframe</a>
+
+          <a data-link="section4" class="scroll_to">Réalisation [HTML/Css]</a>
+
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
+          
+        </div>
+
+      </header>
+
+        <main>
+
+          <figure class="button_acceuil">
+            <a href="home_v3.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
+          </figure>
+
+            <h1 class="titles" id="Top-page">
+                <span>SAE</span>1.05/1.06 <br>
+                <span class="sub-tilte">Projet HTML / CSS</span>
+            </h1>
+            
+            <section class="first_section">
+                    <h2>Introduction</h2>
+
+                <div>
+
+                    <p>
+                        [Explication du projet]<br>
+                        Le projet en HTML / Css cette année portait sur la création d'un site fonctionnelle.<br>
+                        Nous avons dû expliquer une entreprise en simplifiant les termes techniques (lexique) pour rendre l'entreprise accessible à la génération Z.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- SECTION 2 -->  
+
+            <section class="second_section" id="section2">
+
+                <h2>Début du projet : Cahier des charges</h2>
+
+                <div class="project_asides">
+
+                  <figure><img src="img/html-charged-book.png" id="img_section2" alt="Cahier des charges"></figure>
+
+                  <p>Au début du projet nous avons dû monter un recueille des besoins pour notre site web réunit des informations sur l'entreprise puis les triées. <br>
+                      Un collègue a été nommé chef d'équipe pour la rédaction de celui-ci.
+                  </p>
+                    
+                </div>
+
+            </section>
+
+            <!-- SECTION 3 -->  
+
+            <section class="second_section" id="section3">
+
+              <h2>Phase 2 : Conception / Wireframe</h2>
+
+              <div class="project_asides">
+
+                <figure><img src="img/html-project-concept.png" id="img_section3" alt="Cahier des charges"></figure>
+                  
+                <p>
+                  Pour cette étape, je me suis porté volontaire en tant que chef d'équipe.<br>
+                  J'ai donc dirigé mon équipe et proposer un design unanime pour le groupe, qu'on adaptera sur ses maquettes.<br>
+                  J'ai aussi opté pour une approche similaire dans les styles des pages pour plus d'homogénéité sur l'entête et le pied de page.<br>
+                  Ce qui permet à mon équipe de travailler que sur la contenue des pages et non aux styles car il est prédéfini.
+                </p>
+
+              </div>
+
+          </section>
+
+          <!-- SECTION 4 -->  
+
+          <section class="second_section" id="section4">
+
+            <h2>Phase finale : Réalisation [HTML/Css]</h2>
+
+            <div class="project_asides">
+
+              <figure><img src="img/project-html-final.png" id="img_section3" alt="Cahier des charges"></figure>
+                
+              <p>
+                Durant cette phase décisive, j'ai continué et assumé mon rôle <span>de chef de projet.</span><br>
+                Il a fallu donc développer cette conception avec les languages <span>HTML/Css.</span><br>
+                2 pages par personne étaient reparties par personne au sein du groupe, personnellement j'en ai pris 3 car elles étaient impaires.<br>
+                J'ai commencé donc en amont à faire l'entête et le pied de page pour laisser plus de temps aux autres membres pour s'occuper du contenu de leur page.<br>
+                Après cette étape terminée, les membres restituent leur travaux au chef d'équipe (en l'occurrence moi-même), ou je revois leur travail avant de tout raccorder.<br>
+                Une fois tout ceci terminé nous avons rendu le site.<br>
+                j'ai fait quelques changements et réglé des problèmes internes aux sites avant notre présentation orale.<br>
+                Ce que vous verrez sur cette vidéo Youtube est la version finie.
+                Bon visionnage.
+              </p>
+
+            </div>
+
+        </section>
+           
+        </main> 
+        <script src="js/burgermenu.js"></script>
+        <script src="js/global.js"></script>
+    </body>
+
+    <footer>
+
+        <section class="redirection">
+
+            <ul class="links_redirect">
+                <li><a href="https://github.com/Tenyar"><img src="img/github_icon.png" alt="Github"></a><span class="tooltiptext">Voir mes projets Github !</span></li>
+                <li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/kersuaar"><img src="img/gitlab_icon.png" alt="Gitlab"></a><span class="tooltiptext">Voir mes projets Gitlab !</span></li>
+                <li><a href="https://www.linkedin.com/in/arnaud-kersual-aa588b268/"><img src="img/linkedin_icon.png" alt="Linkedin"></a><span class="tooltiptext">Voir mon compte Linkedin !</span></li>
+                <li><a href="https://fr.fiverr.com/arnaudkersual?up_rollout=true"><img src="img/fiverr_icon.png" alt="Fiverr"></a><span class="tooltiptext">Voir mon compte Fiverr !</span></li>
+            </ul>
+            
+          <span>© 2023 - Arnaud Kersual - Étudiant en bachelor informatique</span>
+
+        </section>
+
+    </footer>
+
+</html>

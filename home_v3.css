@@ -106,7 +106,7 @@ img{
 
     overflow: hidden;
   }
-  
+    
   .dropdown .dropbtn {
     margin: 0; padding: 14px 16px;
 
@@ -115,6 +115,8 @@ img{
     border: none;
 
     outline: none;
+
+    transition: 0.3s;
 
     color: white;
     font-size: 17px;
