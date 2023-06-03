@@ -27,12 +27,13 @@
 
               <a data-link="section1" class="scroll_to">Première année</a><!-- La classe "Scroll_to" est pour le référencement dans le JS(javaScript) -->
               <a data-link="section2" class="scroll_to">Deuxième année</a><!-- "data-link" est un lien vers une donnée (en outre chaque sections de la page) -->
+              <a data-link="section3" class="scroll_to">Projets personnels</a>
         
             </div>
 
           </div> 
             <!-- le "data-link" est lié a un identifiant (id) d'une section -->
-          <a data-link="section3" class="scroll_to">À propos de moi</a> 
+          <a data-link="section4" class="scroll_to">À propos de moi</a> 
 
             <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
           <a data-link="Last_Wrap" class="scroll_to">Me contacter</a>
@@ -75,7 +76,7 @@
 
                 <!-- Table first year project -->    
 
-                <div class="Table_SAE" id="Table_SAE_1Y">
+                <div class="Table_Project" id="Table_SAE_1Y">
 
                         <!-- First Project / Sae 1Y -->
                         
@@ -129,12 +130,12 @@
 
                 <!-- SECOND ROW OF THE TABLE OF PROJECTS -->
 
-                <div class="Table_SAE" id="Table_SAE_1Y_2">
+                <div class="Table_Project" id="Table_SAE_1Y_2">
                 <!-- Fourth Project / Sae 1Y -->
                     
                         <div class="container">
 
-                            <img src="img/SAE_1.05.png" alt="SAE 1.01" class="project_images">
+                            <img src="img/SAE_1.05.png" alt="SAE 1.05.06" class="project_images">
 
                             <h3>SAE 1.05/ SAE 1.06<br>
                                 <span class="sub-title">Recueil de besoins / conception</span>
@@ -146,60 +147,64 @@
 
                         </div>
 
-            </div>
+                </div>
 
             </section>
 
-            <!-- SECTION 2 -->  
-            <!-- Golden Color [ABSOLUTE positioning]-->    
-            <div id="Color_SAE"></div>
+            <!-- SECTION 2 --> 
+             
             <section class="Table_Main" id="section2">
 
                 <h2>Deuxième année</h2>
 
-                <!-- Table Second year project -->    
-                
+                <!-- Table first year project -->    
 
-                <div class="Table_SAE" id="Table_SAE_2Y">
+                <div class="Table_Project" id="Table_SAE_1Y">
 
-                        <!-- First Project / Sae 2Y -->
+                        <!-- First Project / Sae 1Y -->
                         
                             <div class="container">
 
-                                <img src="img/SAE_1.01.png" alt="SAE 1.01" class="project_images">
+                                <img src="img/MEga_SAE.png" alt="SAE 1.01" class="project_images">
 
-                                <span>SAE 1.03 / SAE 1.04</span>
+                                <h3>Méga SAE (2.01/2/5/6)<br>
+                                    <span class="sub-title">Développement d'une application</span>
+                                </h3>
 
                                 <div class="Project_Links">
-                                    <a href="sae1_03_04.html" class="Project_Links_a">En savoir plus</a> 
+                                    <a href="sae1_01_02.html" class="Project_Links_a">En savoir plus</a> 
                                 </div>
 
                             </div>
 
-                            <!-- Second Project / Sae 2Y -->
+                            <!-- Second Project / Sae 1Y -->
 
                             <div class="container">
 
-                                <img src="img/SAE_1.03.png" alt="SAE 1.01" class="project_images">
+                                <img src="img/SAE2.03.png" alt="SAE 1.03" class="project_images">
 
-                                <span>SAE 1.03 / SAE 1.04</span>
+                                <h3>SAE 2.03<br>
+                                    <span class="sub-title">Installation de services réseau</span>
+                                </h3>
 
                                 <div class="Project_Links">
-                                    <a href="sae1_03_04.html" class="Project_Links_a">En savoir plus</a> 
+                                    <a href="sae1_03.html" class="Project_Links_a">En savoir plus</a> 
                                 </div>
 
                             </div>
 
-                        <!-- Third Project / Sae 2Y -->
+                        <!-- Third Project / Sae 1Y -->
 
-                            <div class="container Last_container">
+                        <div class="container Last_container"> <!-- container.Last_container (to acces) -->
     
-                                <img src="img/SAE_1.05.png" alt="SAE 1.01" class="project_images">
-    
-                                <span>SAE 1.03 / SAE 1.04</span>
+                                <img src="img/SAE_1.04.png" alt="SAE 1.04" class="project_images">
 
+                                <h3>SAE 2.04<br>
+                                    <span class="sub-title">Exploitation d'une base de données</span>
+                                </h3>
+    
                                 <div class="Project_Links">
-                                    <a href="sae1_03_04.html" class="Project_Links_a">En savoir plus</a> 
+                                    <a href="sae1_04.html   " class="Project_Links_a">En savoir plus</a> 
                                 </div>
     
                             </div>
@@ -208,14 +213,61 @@
 
             </section>
 
-            <section Class="Wrap_container" id="section3">
+            <!-- SECTION 3 -->  
+            
+            <section class="Table_Main" id="section3">
+
+                <h1>Mes projets personnels</h1>
+                <h2>Blender / Source engine</h2>
+
+                <!-- Table blender project -->    
+
+                <div class="Table_Project" id="Table_SAE_1Y">
+
+                        <!-- First Personnal Project -->
+                        
+                            <div class="container">
+
+                                <img src="img/blender_subs.png" alt="Blender" class="project_images">
+
+                                <h3>Blender<br>
+                                    <span class="sub-title">Modèles 3D / Texturing / Animation</span>
+                                </h3>
+
+                                <div class="Project_Links">
+                                    <a href="sae1_01_02.html" class="Project_Links_a">En savoir plus</a> 
+                                </div>
+
+                            </div>
+
+                            <!-- Second Personnal Project -->
+
+                            <div class="container Last_container">
+
+                                <img src="img/hammer-logo.png" alt="SAE 1.03" class="project_images">
+
+                                <h3>Source engine<br>
+                                    <span class="sub-title">Hammer editor</span>
+                                </h3>
+
+                                <div class="Project_Links">
+                                    <a href="sae1_03.html" class="Project_Links_a">En savoir plus</a> 
+                                </div>
+
+                            </div>
+
+                </div>
+
+            </section>
+
+            <section Class="Wrap_container" id="section4">
 
                 <h1>À propos de moi</h1>
 
                 <div>
                     <article>
 
-                        <h3>TEST 1</h3>
+                        <h3>Qui je suis ?</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet non maiores ea at eos optio aspernatur? Amet neque nostrum error, rem velit officia quia doloribus ipsum dolorem sunt ab.
                         </p>

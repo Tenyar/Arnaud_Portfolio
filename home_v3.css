@@ -339,7 +339,7 @@ img{
 
  /* TABLES */
 
- .Table_SAE {
+ .Table_Project {
   margin: 0 0 5% 0;
   
   border-collapse: collapse;
@@ -353,7 +353,7 @@ img{
 }
 
 
-.Table_SAE  {
+.Table_Project  {
 border-top: none; border-right: none;
 
 margin: auto;
@@ -363,13 +363,13 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 
 
 @media screen and (max-width: 980px) {
-  .Table_SAE {flex-wrap: wrap; border-left: 0.1vh solid black; font-size: 0.75em; width: min-content;}
+  .Table_Project {flex-wrap: wrap; border-left: 0.1vh solid black; font-size: 0.75em; width: min-content;}
   #Table_SAE_1Y_2 div {border-left: none; }
   .container.Last_container:last-child { border-right: 0.1vh solid black;}
 }
 /* Delete Right border of the first <td> in each <tr> */
 
-.Table_SAE div {
+.Table_Project div {
   border-left: none;
   border-top: none;
 }
@@ -445,15 +445,15 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 /* ********** HOVER PART ********** */
 
 
-.Table_SAE .container:hover .Project_Links{
+.Table_Project .container:hover .Project_Links{
   opacity: 1;
 }
 
-.Table_SAE .container:hover img{
+.Table_Project .container:hover img{
   filter: opacity(30%);
 }
 
-.Table_SAE .container:hover span{
+.Table_Project .container:hover span{
   filter: opacity(30%);
 }
 
@@ -504,6 +504,9 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 
 /* ---- END A PROPOS DE MOI PART ---- */
 
+  article h3 {
+    font-size: x-large;
+  }
 
  /*------------------- End of Main -------------------*/
 
