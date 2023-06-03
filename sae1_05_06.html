@@ -11,66 +11,86 @@
 
 </head>
 
-    <body>
-                
-      <header>
+  <body>
+              
+    <header>
 
-        <div class="Nav_Bar" id="myTopnav">
+      <div class="Nav_Bar" id="myTopnav">
 
-          <a data-link="Top-page" class="scroll_to">Introduction</a>  <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
-          
-            <!-- le "data-link" est lié a un identifiant (id) d'une section -->
-          <a data-link="section2" class="scroll_to">Début du projet</a> 
+        <a data-link="Top-page" class="scroll_to">Présentation globale</a>  <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
+        
+          <!-- le "data-link" est lié a un identifiant (id) d'une section -->
+        <a data-link="section2" class="scroll_to">Contraintes</a> 
 
-            <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
-          <a data-link="section3" class="scroll_to">Conception / Wireframe</a>
+          <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
+        <a data-link="section3" class="scroll_to">Conception / Wireframe</a>
 
-          <a data-link="section4" class="scroll_to">Réalisation [HTML/Css]</a>
+        <a data-link="section4" class="scroll_to">Réalisation [HTML/Css]</a>
 
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
-          
+        <a data-link="section5" class="scroll_to">Ressources qui alimentent ce projet</a> 
+
+        <a data-link="section6" class="scroll_to">Mon rôle</a>
+        
+        <a data-link="section7" class="scroll_to">Mes compétences acquises</a> 
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
+        
+      </div>
+
+    </header>
+
+      <main>
+
+        <figure class="button_acceuil">
+          <a href="home_v3.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
+        </figure>
+
+          <h1 class="titles" id="Top-page">
+              <span>SAE</span>1.05/1.06 <br>
+              <span class="sub-tilte">Projet HTML / CSS</span>
+          </h1>
+            
+          <section class="first_section">
+            <h2>Préparation / Présentation globale</h2>
+
+        <div>
+
+            <p>
+                Ce projet avait pour but la création d'un site web institutionnel d'une entreprise du secteur numérique pour les "nuls".<br>
+                <br>
+
+                <span class="underline">Cette S.A.É. est repartie en 3 parties :</span><br>
+
+                - Définition du besoin (cahier des chargesà).<br>
+                - Conception (wireframe) du site.<br>
+                - Réalisation (développement) du site.<br>
+                <br>
+                Note groupe était consitué de 4 membres.<br>
+                <br>
+
+                <span class="underline">Le sujet porte sur l'accessibilité de notre site web aux amateurs mais aussi au moins connaisseurs.</span><br>
+                <br>
+                Nous avons dû expliquer une entreprise en simplifiant les termes techniques (lexique) pour rendre l'entreprise accessible à la génération Z.<br>
+                <br>
+            </p>
+
         </div>
 
-      </header>
-
-        <main>
-
-          <figure class="button_acceuil">
-            <a href="home_v3.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
-          </figure>
-
-            <h1 class="titles" id="Top-page">
-                <span>SAE</span>1.05/1.06 <br>
-                <span class="sub-tilte">Projet HTML / CSS</span>
-            </h1>
-            
-            <section class="first_section">
-                    <h2>Introduction</h2>
-
-                <div>
-
-                    <p>
-                        [Explication du projet]<br>
-                        Le projet en HTML / Css cette année portait sur la création d'un site fonctionnelle.<br>
-                        Nous avons dû expliquer une entreprise en simplifiant les termes techniques (lexique) pour rendre l'entreprise accessible à la génération Z.
-                    </p>
-
-                </div>
-
-            </section>
+    </section>
 
             <!-- SECTION 2 -->  
 
             <section class="second_section" id="section2">
 
-                <h2>Début du projet : Cahier des charges</h2>
+                <h2>Contraintes : Cahier des charges</h2>
 
                 <div class="project_asides">
 
                   <figure><img src="img/html-charged-book.png" id="img_section2" alt="Cahier des charges"></figure>
 
-                  <p>Au début du projet nous avons dû monter un recueille des besoins pour notre site web réunit des informations sur l'entreprise puis les triées. <br>
-                      Un collègue a été nommé chef d'équipe pour la rédaction de celui-ci.
+                  <p>Au début du projet nous avons dû monter un recueille des besoins pour notre site web réunit des informations sur l'entreprise puis les triées.<br>
+                    <br>
+                    Un collègue a été nommé chef d'équipe pour la rédaction de celui-ci.
                   </p>
                     
                 </div>
@@ -88,10 +108,11 @@
                 <figure><img src="img/html-project-concept.png" id="img_section3" alt="Cahier des charges"></figure>
                   
                 <p>
-                  Pour cette étape, je me suis porté volontaire en tant que chef d'équipe.<br>
-                  J'ai donc dirigé mon équipe et proposer un design unanime pour le groupe, qu'on adaptera sur ses maquettes.<br>
-                  J'ai aussi opté pour une approche similaire dans les styles des pages pour plus d'homogénéité sur l'entête et le pied de page.<br>
-                  Ce qui permet à mon équipe de travailler que sur la contenue des pages et non aux styles car il est prédéfini.
+                  Lors de la phase de conception nous avons produit un design très homogène sur l'entête et le pied de page pour gardé le design synthétique<br>
+                  <br>
+                  Ce style de conception permet à l'équipe de travailler que sur le contenue des pages et non aux styles car il est prédéfini.<br>
+                  <br>
+                  La sémantique à aussi joué un rôle important dans cette conception, il fallait garder un tout cohérent.
                 </p>
 
               </div>
@@ -109,41 +130,103 @@
               <figure><img src="img/project-html-final.png" id="img_section3" alt="Cahier des charges"></figure>
                 
               <p>
-                Durant cette phase décisive, j'ai continué et assumé mon rôle <span>de chef de projet.</span><br>
-                Il a fallu donc développer cette conception avec les languages <span>HTML/Css.</span><br>
-                2 pages par personne étaient reparties par personne au sein du groupe, personnellement j'en ai pris 3 car elles étaient impaires.<br>
-                J'ai commencé donc en amont à faire l'entête et le pied de page pour laisser plus de temps aux autres membres pour s'occuper du contenu de leur page.<br>
-                Après cette étape terminée, les membres restituent leur travaux au chef d'équipe (en l'occurrence moi-même), ou je revois leur travail avant de tout raccorder.<br>
-                Une fois tout ceci terminé nous avons rendu le site.<br>
-                j'ai fait quelques changements et réglé des problèmes internes aux sites avant notre présentation orale.<br>
-                Ce que vous verrez sur cette vidéo Youtube est la version finie.
-                Bon visionnage.
+                Durant cette phase décisive, il a fallu développer cette conception avec les languages <span>HTML/Css.</span><br>
+                <br>
+                En suivant les maquettes (wireframe) que nous avons produit lors de la phase de conception et en respectant le cahier des charges.<br>
+                <br>
+                Nous avons pu produire un site web fonctionnel.
               </p>
 
             </div>
 
         </section>
-           
-        </main> 
-        <script src="js/burgermenu.js"></script>
-        <script src="js/global.js"></script>
-    </body>
 
-    <footer>
+        <!-- SECTION 5 -->
 
-        <section class="redirection">
+        <section class="second_section" id="section3">
 
-            <ul class="links_redirect">
-                <li><a href="https://github.com/Tenyar"><img src="img/github_icon.png" alt="Github"></a><span class="tooltiptext">Voir mes projets Github !</span></li>
-                <li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/kersuaar"><img src="img/gitlab_icon.png" alt="Gitlab"></a><span class="tooltiptext">Voir mes projets Gitlab !</span></li>
-                <li><a href="https://www.linkedin.com/in/arnaud-kersual-aa588b268/"><img src="img/linkedin_icon.png" alt="Linkedin"></a><span class="tooltiptext">Voir mon compte Linkedin !</span></li>
-                <li><a href="https://fr.fiverr.com/arnaudkersual?up_rollout=true"><img src="img/fiverr_icon.png" alt="Fiverr"></a><span class="tooltiptext">Voir mon compte Fiverr !</span></li>
-            </ul>
+          <h2>Ressources qui alimentent ce projet</h2>
+
+          <div class="project_asides">
+
+            <p>
+              Les ressources utilisées pour ce projet sont :<br>
+              • R1.02 [Développement d'interfaces web]<br>
+              Elle comporte nos connaissances dans le langage de programmation Html/Css.<br>
+              <br>
+              • R1.11 [Bases de la communication]<br>
+              Elle comporte nos méthodes de communication / coordination lors d'un contexte projet.<br>
+            </p>
+
+          </div>
             
-          <span>© 2023 - Arnaud Kersual - Étudiant en bachelor informatique</span>
+        <!-- SECTION 6 -->  
 
-        </section>
+        <section class="second_section" id="section6">
 
-    </footer>
+          <h2>Nos/Mon rôle(s)</h2>
+
+          <div class="project_asides">
+
+            <p>
+              Nous avons réparti les rôles de la manière suivante :<br>
+              <br>
+              • Pour ce projet je me suis porter volontaire pour être le chef de projet. Je devais donc prendre du recul sur notre travail et coordonnée tous les membres pour finir les tâches.<br>
+              <br>
+              • J'étais également chargé de faire le compte rendu à toute l'équipe et de régler les dernières erreurs avant le rendu final.<br>
+              <br>
+              • Les autres membres avait chacun 2 page à faire pour le site.<br>
+              <br>
+              J'ai commencé donc en amont à faire l'entête et le pied de page pour laisser plus de temps aux autres membres pour s'occuper du contenu de leur page.
+            </p>
+
+          </div>
+
+      </section>
+
+      <!-- SECTION 7 -->  
+
+      <section class="second_section" id="section7">
+
+        <h2>Mes compétences acquises</h2>
+
+        <div class="project_asides">
+
+          <p>
+            À la fin de ce projet, j'ai acquis diverses compétences :<br>
+            <br>
+            • L'adaptation dans un milieu collectif / dans une mise en situation professionnel.<br>
+            <br>
+            • Construire un produit à partir d'outils de conception.<br>
+            <br>
+            • Developper dans le langage HTML/CSS (et brièvement du JavaScript).<br>
+            <br>
+          </p>
+
+        </div>
+
+    </section>
+
+    </main> 
+    <script src="js/burgermenu.js"></script>
+    <script src="js/global.js"></script>
+  </body>
+
+  <footer>
+
+      <section class="redirection">
+
+          <ul class="links_redirect">
+              <li><a href="https://github.com/Tenyar"><img src="img/github_icon.png" alt="Github"></a><span class="tooltiptext">Voir mes projets Github !</span></li>
+              <li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/kersuaar"><img src="img/gitlab_icon.png" alt="Gitlab"></a><span class="tooltiptext">Voir mes projets Gitlab !</span></li>
+              <li><a href="https://www.linkedin.com/in/arnaud-kersual-aa588b268/"><img src="img/linkedin_icon.png" alt="Linkedin"></a><span class="tooltiptext">Voir mon compte Linkedin !</span></li>
+              <li><a href="https://fr.fiverr.com/arnaudkersual?up_rollout=true"><img src="img/fiverr_icon.png" alt="Fiverr"></a><span class="tooltiptext">Voir mon compte Fiverr !</span></li>
+          </ul>
+          
+        <span>© 2023 - Arnaud Kersual - Étudiant en bachelor informatique</span>
+
+      </section>
+
+  </footer>
 
 </html>
