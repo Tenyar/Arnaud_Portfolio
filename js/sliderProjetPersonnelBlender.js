@@ -1,6 +1,6 @@
 var slider_img_blender = document.querySelector('.slider-img_blender');
 
-var imagesBlender = ['3d-models-1.png', '3d-models-4.png', '3d-models-5.png', '3d-models-6.png', '3d-models-7.png', '3d-models-8.png'];
+var imagesBlender = ['3d-models-1.png', '3d-models-4.png', '3d-models-5.png', '3d-models-6.png', '3d-models-7.png', '3d-models-8.png', '3d-models-9.png'];
 
 var i = 0; //current image index.
 
