@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="project_v3.css"> <!-- Feuille de style principale -->
+<title>Portfolio-Kersual_Arnaud-projet-perso</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+  <body>
+              
+    <header>
+
+      <div class="Nav_Bar" id="myTopnav">
+        <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
+        <a data-link="Top-page" class="scroll_to">Introduction</a> 
+        
+          <!-- le "data-link" est lié a un identifiant (id) d'une section -->
+        <a data-link="section2" class="scroll_to">Projet personnel</a>
+
+        <a data-link="section3" class="scroll_to">Mes compétences</a>
+
+          <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
+
+        <a data-link="section4" class="scroll_to">Redirections</a>
+        
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
+        
+      </div>
+
+    </header>
+
+      <main>
+
+        <figure class="button_acceuil">
+          <a href="home_v3.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
+        </figure>
+
+        <h1 class="titles" id="Top-page">
+            <span>Hammer / Source engine<br>
+            <span class="sub-tilte">Level design</span>
+        </h1>
+        
+        <section class="first_section">
+                <h2>Introduction</h2>
+
+            <article>
+
+                <p>
+                   Depuis mes 13 ans, j'ai commencé à m'intéresser au level design.<br>
+                    <br>
+                    Plus particulièrement sur Source Engine (le moteur Source) qui a permis la création de jeux tels que Half-Life 2.<br>
+                    <br>
+                    Ce moteur était une révolution technologique à son époque en raison de sa conception de la physique et de la masse d'un objet dans l'espace.<br>
+                    <br>
+                    Vous trouverez sur cette page les moments forts de mon évolution dans ce domaine avec mes créations, reproductions et autres, mêlant des modèles 3D du level design.<br>
+                    <br>
+
+                  <img src="img/source.png" width="400" height="200" class="img_sections" alt="SourceEngine">
+                </p>
+            </article>
+
+        </section>
+
+        <!-- SECTION 2 -->  
+
+        <section class="second_section" id="section2">
+
+            <h2>Catre / Niveau</h2>
+
+            <article class="project_asides">
+
+            <img src="img/hammer.png" class="img_sections" alt="Cahier des charges">
+
+              <p>
+                Voici l'évolution des différentes "levels" / cartes (maps) que j'ai créées au fil des années sur le logiciel "Hammer" utilisant le moteur de jeu (Source Engine).<br>
+                <br>
+                Voici quelques liens qui peuvent illustrer en vidéo certaines images :
+                <br>
+                <a href="https://youtu.be/-jG9Hm7bAfE">Temple Tython</a>
+                <br>
+                <a href="https://www.youtube.com/watch?v=faUUQiMZfDI">Maison des maîtres</a>
+
+              </p>
+              
+            </article>
+
+        </section>
+
+        <section class="second_section" id="section2">
+
+          <h2>Mes créations</h2>
+
+          <article class="project_asides">
+
+            <p>
+              Sur Blender, j'ai pu réaliser de nombreuses créations pendant ce temps. Vous pouvez voir un aperçu juste au-dessus.<br>
+              <br>
+              Si vous souhaitez en voir davantage, il y a un slider disponible ci-dessous.
+              <br>
+            </p>
+
+            <!-- Image Slider -->
+            <div class="slider">
+              <span class="slider_text">2017</span>
+              <div class="img-box">
+                <img src="img_projet_perso/level_design-2017.png" alt="sliderImage" class="slider_img_level_design">
+                <button id="btnPrev" onclick="prev()"> ⇦ </button>
+                <button id="btnNext" onclick="next()"> ⇨ </button>
+              </div>
+            </div>
+            <!-- Next and Prev Buttons -->
+            
+              
+          </article>
+
+      </section>
+
+        <!-- SECTION 3 -->  
+
+        <section class="second_section" id="section3">
+
+          <h2>Mes compétences</h2>
+
+          <article class="project_asides">
+
+            <p>
+              Mes compétences sur le logiciel Blender et substance painter sont :<br>
+              <br>  
+              •[Modélisation 3D]<br>
+              Elle comprend mes connaissances en modélisation d'une idée, que ce soit des croquis ou d'autres éléments, en un modèle 3D fidèle et optimisé.<br>
+              <br>
+              • [Texturing]<br>
+              Elle comprend mes connaissances en texturing (texturiser les modèles) manuellement.<br>
+            </p>
+
+          </article>
+
+      </section>
+
+    </main> 
+      <script src="js/sliderProjetPersonnelLevelDesign.js"></script>
+      <script src="js/burgermenu.js"></script>
+      <script src="js/global.js"></script>
+  </body>
+
+  <footer>
+
+      <section class="redirection">
+
+          <ul class="links_redirect">
+              <li><a href="https://github.com/Tenyar"><img src="img/github_icon.png" alt="Github"></a><span class="tooltiptext">Voir mes projets Github !</span></li>
+              <li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/kersuaar"><img src="img/gitlab_icon.png" alt="Gitlab"></a><span class="tooltiptext">Voir mes projets Gitlab !</span></li>
+              <li><a href="https://www.linkedin.com/in/arnaud-kersual-aa588b268/"><img src="img/linkedin_icon.png" alt="Linkedin"></a><span class="tooltiptext">Voir mon compte Linkedin !</span></li>
+              <li><a href="https://fr.fiverr.com/arnaudkersual?up_rollout=true"><img src="img/fiverr_icon.png" alt="Fiverr"></a><span class="tooltiptext">Voir mon compte Fiverr !</span></li>
+          </ul>
+          
+        <span>© 2023 - Arnaud Kersual - Étudiant en bachelor informatique</span>
+
+      </section>
+
+  </footer>
+
+</html>
