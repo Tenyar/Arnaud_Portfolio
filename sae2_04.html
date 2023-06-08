@@ -52,24 +52,25 @@
             <article>
 
               <p>
-                  Ce projet avait pour but d'installer un système d'exploitation Linux (Debian 11).<br>
-                  Puis de faire une installation d'outils de développement dont un IDE (Intellij IDEA).<br>
+                  Ce projet avait comme but de réaliser une étude simple contenant des graphiques appropriés pour répondre à une question précise, et rédigée en anglais
+                  a partir d'une base de données réelle disponible en opendate et renseignée par des contributions libres(donc mal remplie, et contenant plus d'informations que nécessaire).<br>
                   <br>
 
-                  <span class="underline">Cette S.A.É. est regroupé en deux thèmes :</span><br>
+                  <span class="underline">Cette S.A.É. est regroupé en trois thèmes :</span><br>
 
-                  - Installation d’un système d’exploitation (Debian) avec une interface graphique Plasma/KDE.<br>
-                  - Installation d’outils de développement (IDE, etc...).<br>
+                  - Exploitation d'une base de données<br>
+                  - Modélisation de ses données<br>
+                  - Compte rendu en anglais<br>
 
                   <br>
-                  C'était un projet individuel en autonomie.<br>
+                  C'était un projet réalisé en binôme avec des évaluations complémentaires individuelles.<br>
                   <br>
-
-                  <span class="underline">Pour l'installation du système d'exploitation (OS) il se fera sur :</span><br>
-
-                  - Une machine virtuelle (MV) Sotckée sur une station linux.<br>
-                  - L'installation est sur une interface graphique.<br>
-                  - Nous installerons les packages nécessaires avec une distribution "apt".<br>
+                  <span class="underline">L'exploitation des données se fait sur une vue (les tables contiennent plus de 5 Gio de données soit 2+ millions de lignes).</span><br>
+                  <br>
+                  Nous avons du rendre un script psql contenant : <br>
+                  <br>
+                  - Les requêtes SQL et commandes psql permettant, à partir de cette vue, de générer un fichier CSV ne contenant que les données utiles, nettoyées.<br>
+                  - Une brève explication de la solution que vous avez mise en œuvre pour réaliser chacun des points de nettoyage.<br>
                   <br>
                 </p>
 
@@ -81,11 +82,11 @@
 
         <section class="second_section" id="section2">
 
-          <h2>Exemple machine virtuelle (avec Debian)</h2>
+          <h2>Exemple du developpement des vues :</h2>
 
           <article class="project_asides">
 
-            <figure><img src="img/Linux_VM.png" id="img_linux" alt="Cahier des charges"></figure>
+            <figure><img src="img/sql_2_04.png" id="img_section2" alt="SQL S2.04"></figure>
 
           </article>
 
@@ -101,8 +102,9 @@
 
             <p>
               Les ressources utilisées pour ce projet sont :<br>
-              • R1.04 [Informatique : systèmes d’exploitation]<br>
-              Elle comprend mes connaissances sur le système Debian.<br>
+              • R2.05 [Informatique : SQL]<br>
+              Elle comprend mes connaissances sur langage de programmation SQL et sur postgreSQL.<br>
+              Ainsi que des connaissances sur l'administration d'une base de données. <br>
               <br>
               • R1.11 [Base de la communication]<br>
               Elle comprend nos méthodes de communication lors d'un contexte projet.<br>
@@ -121,8 +123,19 @@
         <article class="project_asides">
 
           <p>
-            Le travail étant individuel j'ai réaliser ce projet en autonomie et individuellement.<br>
+            Le travail étant en binôme, nous nous sommes réparties les vues à créées.<br>
+            Personnellement je me suis charger de ces vues en dessous : <br>
           </p>
+
+          <!-- Image Slider -->
+          <div class="slider">
+            <div class="img-box">
+              <img src="img/sql_2_04.png" alt="sliderImage" class="slider-img_SAE2_04">
+              <button id="btnPrev" onclick="prev()"> ❮ </button>
+              <button id="btnNext" onclick="next()"> ❯ </button>
+            </div>
+          </div>
+          <!-- Next and Prev Buttons -->
 
         </article>
 
@@ -139,13 +152,11 @@
           <p>
             À la fin de ce projet, j'ai acquis diverses compétences :<br>
             <br>
-            • Prise en main de l'installateur Debian.<br>
+            • Administrer une base de donées<br>
             <br>
-            • Installer un système d'exploitation / un système Linux.<br>
+            • Modéliser des données<br>
             <br>
-            • Configurer un système d'exploitation et le rendre adpaté à un besoin.<br>
-            <br>
-            • Construire un bilan dans une langue étrangère sur notre travail.<br>
+            • Rendre des données concrètes.<br>
             <br>
           </p>
 
@@ -153,7 +164,8 @@
 
     </section>
           
-    </main> 
+    </main>
+      <script src="js/sliderSae2_04.js"></script>
       <script src="js/burgermenu.js"></script>
       <script src="js/global.js"></script>
   </body>

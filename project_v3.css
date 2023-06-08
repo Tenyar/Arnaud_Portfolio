@@ -305,7 +305,7 @@
   }
 
   #img_section2{
-    width: 500px; height: 275px;
+    width: 700px; height: 400px;
     border-radius: 1em;
     box-shadow: 2px 2px 10px 0.1px #000000;
   }
@@ -322,8 +322,9 @@
     box-shadow: -2px 2px 10px 0.1px #000000;
   }
 
-  @media screen and (max-width: 650px) {/* To resize the image when width of page is below 730px*/
+  @media screen and (max-width: 900px) {/* To resize the image when width of page is below 730px*/
     /* Divided by 2*/
+    #img_linux{ height: 250px;}
     #img_section2{ width: 250px; height: 137.5px;}
     #img_section3{ width: 275px; height: 125px;}
 
@@ -473,7 +474,7 @@
 /*------------------- Start of Personal Part ----------*/
 
   .slider {
-    width: 1200px; height: 674px;
+    width: 60vw; height: 60vh;
     display: flex;
     justify-content: center;
     position: relative;
@@ -484,7 +485,7 @@
   }
 
   .img-box img{
-    width: 1200px; height: 674px;
+    width: 60vw; height: 60vh;
     
     position: relative;
   }
@@ -508,7 +509,7 @@
     z-index: 1;
   }
 
-  @media screen and (max-width: 1400px) { /* when screen is below 1400px width*/
+  @media screen and (min-width: 1400px) { /* when screen is below 1400px width*/
     .slider {width: 600px; height: 337px;}
     .img-box img {width: 600px; height: 337px;}
   }

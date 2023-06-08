@@ -371,7 +371,7 @@ text-shadow: 2.5px 2.5px #ffaa00;
   .Table_Main h1 {font-size: 20px;}
 }
 
-#Table_SAE_2Y .container a{
+#Table_SAE_2Y .container:not(.container.Last_container) a{ /* don't take the ".container Last_container" class. We are basically excluding this class from all the other ".container" class.*/
   cursor: default;
   pointer-events: none;
 }
