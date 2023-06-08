@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="project_v3.css"> <!-- Feuille de style principale -->
+<title>Portfolio-Kersual_Arnaud-SAE2.04</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+  <body>
+              
+    <header>
+
+      <div class="Nav_Bar" id="myTopnav">
+
+        <a data-link="Top-page" class="scroll_to">Présentation globale</a>  <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
+        
+          <!-- le "data-link" est lié a un identifiant (id) d'une section -->
+        <a data-link="section2" class="scroll_to">Exemple</a> 
+
+          <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
+        <a data-link="section3" class="scroll_to">Ressources qui alimentent ce projet</a>
+
+        <a data-link="section4" class="scroll_to">Mon rôle</a>
+        
+        <a data-link="section4" class="scroll_to">Mes compétences acquises</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
+        
+      </div>
+
+    </header>
+
+      <main>
+
+        <figure class="button_acceuil">
+          <a href="home_v3.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
+        </figure>
+
+        <h1 class="titles" id="Top-page">
+            <span>SAE</span>2.04 <br>
+            <span class="sub-tilte">Exploitation d'une base de données</span>
+        </h1>
+        
+        <section class="first_section">
+          <h2>Préparation / Présentation globale</h2>
+
+            <article>
+
+              <p>
+                  Ce projet avait pour but d'installer un système d'exploitation Linux (Debian 11).<br>
+                  Puis de faire une installation d'outils de développement dont un IDE (Intellij IDEA).<br>
+                  <br>
+
+                  <span class="underline">Cette S.A.É. est regroupé en deux thèmes :</span><br>
+
+                  - Installation d’un système d’exploitation (Debian) avec une interface graphique Plasma/KDE.<br>
+                  - Installation d’outils de développement (IDE, etc...).<br>
+
+                  <br>
+                  C'était un projet individuel en autonomie.<br>
+                  <br>
+
+                  <span class="underline">Pour l'installation du système d'exploitation (OS) il se fera sur :</span><br>
+
+                  - Une machine virtuelle (MV) Sotckée sur une station linux.<br>
+                  - L'installation est sur une interface graphique.<br>
+                  - Nous installerons les packages nécessaires avec une distribution "apt".<br>
+                  <br>
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- SECTION 2 -->  
+
+        <section class="second_section" id="section2">
+
+          <h2>Exemple machine virtuelle (avec Debian)</h2>
+
+          <article class="project_asides">
+
+            <figure><img src="img/Linux_VM.png" id="img_linux" alt="Cahier des charges"></figure>
+
+          </article>
+
+        </section>
+
+        <!-- SECTION 3 -->  
+
+        <section class="second_section" id="section3">
+
+          <h2>Ressources qui alimentent ce projet</h2>
+
+          <article class="project_asides">
+
+            <p>
+              Les ressources utilisées pour ce projet sont :<br>
+              • R1.04 [Informatique : systèmes d’exploitation]<br>
+              Elle comprend mes connaissances sur le système Debian.<br>
+              <br>
+              • R1.11 [Base de la communication]<br>
+              Elle comprend nos méthodes de communication lors d'un contexte projet.<br>
+            </p>
+
+          </article>
+
+        </section>
+
+      <!-- SECTION 4 -->  
+
+      <section class="second_section" id="section4">
+
+        <h2>Mon rôle</h2>
+
+        <article class="project_asides">
+
+          <p>
+            Le travail étant individuel j'ai réaliser ce projet en autonomie et individuellement.<br>
+          </p>
+
+        </article>
+
+      </section>
+
+      <!-- SECTION 5 -->  
+
+      <section class="second_section" id="section5">
+
+        <h2>Mes compétences acquises</h2>
+
+        <article class="project_asides">
+
+          <p>
+            À la fin de ce projet, j'ai acquis diverses compétences :<br>
+            <br>
+            • Prise en main de l'installateur Debian.<br>
+            <br>
+            • Installer un système d'exploitation / un système Linux.<br>
+            <br>
+            • Configurer un système d'exploitation et le rendre adpaté à un besoin.<br>
+            <br>
+            • Construire un bilan dans une langue étrangère sur notre travail.<br>
+            <br>
+          </p>
+
+        </article>
+
+    </section>
+          
+    </main> 
+      <script src="js/burgermenu.js"></script>
+      <script src="js/global.js"></script>
+  </body>
+
+  <footer>
+
+      <section class="redirection">
+
+          <ul class="links_redirect">
+              <li><a href="https://github.com/Tenyar"><img src="img/github_icon.png" alt="Github"></a><span class="tooltiptext">Voir mes projets Github !</span></li>
+              <li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/kersuaar"><img src="img/gitlab_icon.png" alt="Gitlab"></a><span class="tooltiptext">Voir mes projets Gitlab !</span></li>
+              <li><a href="https://www.linkedin.com/in/arnaud-kersual-aa588b268/"><img src="img/linkedin_icon.png" alt="Linkedin"></a><span class="tooltiptext">Voir mon compte Linkedin !</span></li>
+              <li><a href="https://fr.fiverr.com/arnaudkersual?up_rollout=true"><img src="img/fiverr_icon.png" alt="Fiverr"></a><span class="tooltiptext">Voir mon compte Fiverr !</span></li>
+          </ul>
+          
+        <span>© 2023 - Arnaud Kersual - Étudiant en bachelor informatique</span>
+
+      </section>
+
+  </footer>
+
+</html>

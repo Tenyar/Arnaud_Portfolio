@@ -514,11 +514,12 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 .Wrap_container div{
   display: flex;
   flex-wrap: wrap;
+  line-height: 140%;
   justify-content: space-between;
 }
 
 .Wrap_container div article, aside{
-  max-width: 475px;
+  max-width: auto;
   padding-top: 1%;
 }
 
