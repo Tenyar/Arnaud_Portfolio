@@ -670,10 +670,13 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 
  /* ----------------- SPECIAL PART (TRIANGLE SCROLLING) OF THE HERO-IMAGE ----------------- */
 
- .Title-Hero-Image::after {
+ .Title-Hero-Image:before {
+
+  display: inline-block;
+  
   content: '';
-  position: absolute;
-  border: none;
+  position: absolute; top: auto;
+  border-top: none;
   width: 100%; height: 100px;
 
   background-color: var(--body-bg);
@@ -688,7 +691,7 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 
   /* Animation part */
   animation-name: Triangles;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;
@@ -705,7 +708,7 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 
 /* LES TRAITS (bugs quand on zoom) sont peut être du à l'image. */
 
-.Title-Hero-Image::after{
+.Title-Hero-Image:before{
   bottom: 0;
   transform: rotate(.5turn);
 }

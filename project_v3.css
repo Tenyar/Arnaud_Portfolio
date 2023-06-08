@@ -33,8 +33,10 @@
     font-weight: 400;
   }
 
-  .show {display:block;} /*FOR JAVA SCRIPT FUNCTION SHOWING DROPDOWN CONTENT */
-  
+  a{
+    transition: 0.3s;
+  }
+
   /*--------- Start SCROLL BAR ----------*/
   
   ::-webkit-scrollbar {
@@ -86,6 +88,8 @@
     cursor: pointer;
 
     padding: 14px 16px;
+
+    transition: 0.3s;
 
     float: left;
 
@@ -231,17 +235,16 @@
 
     width: 60px;  height: 60px;
 
+    transition: 0.3s;
+
     background-image: url("img/home.png");  background-repeat:no-repeat;  background-size: 100% 100%;
 
     border-radius: 2em;      
   }
 
   .button_acceuil :nth-child(1):hover{
+    background-color: black;
     background-image: url("img/black_home.png");
-  }
-
-  a{ /* for smooth transition at all times */
-    transition: 0.3s;
   }
 
   .titles{
