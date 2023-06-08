@@ -649,7 +649,7 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
     opacity: 0;
     visibility: hidden;
 
-    background-color: black; color: #fff;
+    background-color: #c6c6c6; color: #000000;
     border-radius: 0.25em;
     
     /* Position the tooltip */
@@ -673,7 +673,7 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #000000;
+    border-top: 20px solid #c6c6c6;
     clear: both;
 }
 
