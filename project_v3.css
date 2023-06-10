@@ -521,6 +521,10 @@
     .img-box img {width: 600px; height: 337px;}
   }
 
+  #dot_container{
+    margin-top: 10px;
+  }
+
   #btnPrev{
     position: absolute; left: 0; top: 0;
     height: 100%;
