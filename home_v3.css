@@ -456,6 +456,7 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 
 .container img, a, span {
   transition: 0.3s;
+  white-space: break-spaces;
 }
 
 .container img{
