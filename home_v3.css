@@ -314,7 +314,6 @@ main .Hero-image-arrow-scroller:hover a {
 /* For the switching images for each of my schools that i have been studying */
 .Top-right-page{
   height: fit-content;  width: 25vw;
-  
   margin: 0; padding: 1vh 0 1vh 0;
   background: linear-gradient(to right, rgba(255,255,255,0) 10%,  rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
 
@@ -323,7 +322,7 @@ main .Hero-image-arrow-scroller:hover a {
   position: absolute;
   top: 44vw; right: 0%;
   
-  z-index: 100000;
+  z-index: 1;
 }
 
 .slider-studies-redirect{
