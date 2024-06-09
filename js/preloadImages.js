@@ -1,4 +1,4 @@
-let images = ['../img/IUT2_v2.png', '../img/LaMartine.png', '../img/ChicoutimiUQAC.png'];
+let images = ['img/IUT2_v2.png', 'img/LaMartine.png', 'img/ChicoutimiUQAC.png'];
 let loadedImages = 0;
 
 function preloadImage(url, index, callback) {
