@@ -41,6 +41,20 @@
           <a href="index.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
         </figure>
 
+        <article class="side_table_content">
+          <h1>Table des matières</h1>
+          <a data-link="Top-page" class="scroll_to">Présentation globale</a>
+        
+          <a data-link="section2" class="scroll_to">Exemple</a> 
+
+          <a data-link="section3" class="scroll_to">Ressources qui alimentent ce projet</a>
+
+          <a data-link="section4" class="scroll_to">Mon rôle</a>
+          
+          <a data-link="section4" class="scroll_to">Mes compétences acquises</a>
+        </article>
+      <aside></aside>
+
         <h1 class="titles" id="Top-page">
             <span>SAE</span>2.04 <br>
             <span class="sub-tilte">Exploitation d'une base de données</span>
@@ -52,25 +66,26 @@
             <article>
 
               <p>
-                  Ce projet avait comme but de réaliser une étude simple contenant des graphiques appropriés pour répondre à une question précise, et rédigée en anglais
-                  a partir d'une base de données réelle disponible en opendate et renseignée par des contributions libres(donc mal remplie, et contenant plus d'informations que nécessaire).<br>
+                  Ce projet avait pour objectif de mener une étude simple comportant des graphiques appropriés pour répondre à une question précise, et rédigée en anglais 
+                  à partir d'une base de données réelle disponible en open data et renseignée par des contributions libres (donc mal remplies, et contenant plus d'informations que nécessaire).<br>
                   <br>
 
-                  <span class="underline">Cette S.A.É. est regroupé en trois thèmes :</span><br>
+                  <span class="underline">Ce/Cette projet/S.A.É est regroupé(e) en trois thèmes :</span><br>
 
                   - Exploitation d'une base de données<br>
                   - Modélisation de ses données<br>
                   - Compte rendu en anglais<br>
 
                   <br>
-                  C'était un projet réalisé en binôme avec des évaluations complémentaires individuelles.<br>
+                  Il s'agissait d'un projet réalisé en binôme avec des évaluations complémentaires individuelles.
                   <br>
-                  <span class="underline">L'exploitation des données se fait sur une vue (les tables contiennent plus de 5 Gio de données soit 2+ millions de lignes).</span><br>
                   <br>
-                  Nous avons du rendre un script psql contenant : <br>
+                  <span class="underline">L'exploitation des données se fait à partir d'une vue (les tables contiennent plus de 5 Gio de données, soit 2+ millions de lignes).</span><br>
+                  <br>
+                  Nous avons dû rendre un script psql contenant : <br>
                   <br>
                   - Les requêtes SQL et commandes psql permettant, à partir de cette vue, de générer un fichier CSV ne contenant que les données utiles, nettoyées.<br>
-                  - Une brève explication de la solution que vous avez mise en œuvre pour réaliser chacun des points de nettoyage.<br>
+                  - Une brève explication de la solution que vous nous avons mise en œuvre pour réaliser chacun des points de nettoyage.<br>
                   <br>
                 </p>
 
@@ -103,7 +118,7 @@
             <p>
               Les ressources utilisées pour ce projet sont :<br>
               • R2.05 [Informatique : SQL]<br>
-              Elle comprend mes connaissances sur langage de programmation SQL et sur postgreSQL.<br>
+              Elle comprend mes connaissances sur le langage de programmation SQL et sur le SGBD postgreSQL.<br>
               Ainsi que des connaissances sur l'administration d'une base de données. <br>
               <br>
               • R1.11 [Base de la communication]<br>
@@ -136,9 +151,18 @@
             </div>
           </div>
           <!-- Next and Prev Buttons -->
+          <p>
+          Nous avons également dû modéliser ces données avec une ligne directrice afin de soutenir un sujet particulier que nous souhaitions mettre en évidence dans cette analyse de données. <br>
+          Pour cela, nous avons utilisé le logiciel RStudio, qui nous a permis de créer tous types de diagrammes, d'histogrammes pour analyser/comparer/modéliser ces données.
+          Voici un exemple de graphique/histogramme désiré après analyse des données :
+          </p>
+          <article class="project_asides">
 
+            <figure><img src="img/Rstudio.png" id="img_section2" alt="Rsudio"></figure>
+
+          </article>
         </article>
-
+        
       </section>
 
       <!-- SECTION 5 -->  
@@ -344,6 +368,7 @@
     </section>
           
     </main>
+      <script src="js/tableContentInteractive.js"></script>
       <script src="js/slider_link.js"></script>
       <script src="js/sliderSae2_04.js"></script>
       <script src="js/burgermenu.js"></script>

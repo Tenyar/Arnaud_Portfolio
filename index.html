@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="home_v3.css"> <!-- Feuille de style principale -->
 <title>Portfolio-Kersual_Arnaud-Home</title>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -26,7 +23,7 @@
             <div class="dropdown-content" id="first_dropdown"> <!-- l'identifiant est pour la fonction javaScript. -->
 
               <a data-link="section1" class="scroll_to">Première année</a><!-- La classe "Scroll_to" est pour le référencement dans le JS(javaScript) -->
-              <a data-link="section2" class="scroll_to">Deuxième semestre</a><!-- "data-link" est un lien vers une donnée (en outre chaque sections de la page) -->
+              <a data-link="section2" class="scroll_to">Deuxième année</a><!-- "data-link" est un lien vers une donnée (en outre chaque sections de la page) -->
               <a data-link="section3" class="scroll_to">Projets personnels</a>
         
             </div>
@@ -48,15 +45,20 @@
             
             <div class="Title-Hero-Image" id="Top-page">
 
-                <img src="img/IUT2_v2.jpg" alt="IUT2">
+                <img class="slider-studies-redirect" src="img/IUT2.jpg" alt="IUT2">
 
                 <h1><span>P</span>ortfolio</h1>
                 
                 <h2>Kersual Arnaud</h2>
-
+    
+                <figure class="Top-right-page">
+                    <a class="slider-studies-redirect-link" href="#">
+                        <img class="slider-studies-redirect-logo" src="img/IUT2_logo.png" alt="">
+                    </a>
+                </figure>
             </div>
 
-            <figure>
+            <figure class="Hero-image-arrow-scroller">
                 <a data-link="first_section" class="scroll_to"></a>
             </figure>
 
@@ -88,82 +90,82 @@
 
                 <div class="Table_Project" id="Table_SAE_1Y">
 
-                        <!-- First Project / Sae 1Y S1 -->
-                        
-                            <div class="container">
+                    <!-- First Project / Sae 1Y S1 -->
+                    
+                    <div class="container">
 
-                                <img src="img/SAE_1.01.png" alt="SAE 1.01" class="project_images">
+                        <img src="img/SAE_1.01.png" alt="SAE 1.01" class="project_images">
 
-                                <h3>SAE 1.01 / SAE 1.02<br>
-                                    <span class="sub-title">Comparaison d’approches algorithmiques</span>
-                                </h3>
+                        <h3>SAE 1.01 / SAE 1.02<br>
+                            <span class="sub-title">Comparaison d’approches algorithmiques</span>
+                        </h3>
 
-                                <div class="Project_Links">
-                                    <a href="sae1_01_02.html" class="Project_Links_a">En savoir plus</a> 
-                                </div>
+                        <div class="Project_Links">
+                            <a href="sae1_01_02.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
 
-                            </div>
+                    </div>
 
-                            <!-- Second Project / Sae 1Y S1 -->
+                    <!-- Second Project / Sae 1Y S1 -->
 
-                            <div class="container">
+                    <div class="container">
 
-                                <img src="img/SAE_1.03.png" alt="SAE 1.03" class="project_images">
+                        <img src="img/SAE_1.03.png" alt="SAE 1.03" class="project_images">
 
-                                <h3>SAE 1.03<br>
-                                    <span class="sub-title">Installation d’un poste de développement</span>
-                                </h3>
+                        <h3>SAE 1.03<br>
+                            <span class="sub-title">Installation d’un poste de développement</span>
+                        </h3>
 
-                                <div class="Project_Links">
-                                    <a href="sae1_03.html" class="Project_Links_a">En savoir plus</a> 
-                                </div>
+                        <div class="Project_Links">
+                            <a href="sae1_03.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
 
-                            </div>
+                    </div>
 
-                        <!-- Third Project / Sae 1Y S1 -->
+                    <!-- Third Project / Sae 1Y S1 -->
 
-                        <div class="container Last_container"> <!-- container.Last_container (to acces) -->
-    
-                                <img src="img/SAE_1.04.png" alt="SAE 1.04" class="project_images">
+                    <div class="container Last_container"> <!-- container.Last_container (to acces) -->
 
-                                <h3>SAE 1.04<br>
-                                    <span class="sub-title">Création d’une base de données</span>
-                                </h3>
-    
-                                <div class="Project_Links">
-                                    <a href="sae1_04.html" class="Project_Links_a">En savoir plus</a> 
-                                </div>
-    
-                            </div>
+                        <img src="img/SAE_1.04.png" alt="SAE 1.04" class="project_images">
+
+                        <h3>SAE 1.04<br>
+                            <span class="sub-title">Création d’une base de données</span>
+                        </h3>
+
+                        <div class="Project_Links">
+                            <a href="sae1_04.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
+
+                    </div>
 
                 </div>
 
                 <!-- SECOND ROW OF THE TABLE OF PROJECTS -->
 
-                <div class="Table_Project" id="Table_SAE_1Y_2">
+                <div class="Table_Project" id="Table_SAE_1Y_">
                 <!-- Fourth Project / Sae 1Y S1 -->
-                    
-                        <div class="container">
+                
+                    <div class="container firstElementUnder">
 
-                            <img src="img/SAE_1.05.png" alt="SAE 1.05.06" class="project_images">
+                        <img src="img/SAE_1.05.png" alt="SAE 1.05.06" class="project_images">
 
-                            <h3>SAE 1.05/ SAE 1.06<br>
-                                <span class="sub-title">Recueil de besoins / conception</span>
-                            </h3>
+                        <h3>SAE 1.05/ SAE 1.06<br>
+                            <span class="sub-title">Recueil de besoins / conception</span>
+                        </h3>
 
-                            <div class="Project_Links">
-                                <a href="sae1_05_06.html" class="Project_Links_a">En savoir plus</a> 
-                            </div>
-
+                        <div class="Project_Links">
+                            <a href="sae1_05_06.html" class="Project_Links_a">En savoir plus</a> 
                         </div>
+
+                    </div>
 
                 </div>
 
             </section>
 
-            <!-- SECTION 2 --> 
+            <!-- Second Semester -->
              
-            <section class="Table_Main" id="section2">
+            <section class="Table_Main">
 
                 <h2>Deuxième semestre</h2>
 
@@ -171,59 +173,112 @@
 
                 <div class="Table_Project" id="Table_SAE_2Y">
 
-                        <!-- First Project / Sae 1Y S2 -->
-                        
-                            <div class="container">
+                    <!-- First Project / Sae 1Y S2 -->
+                
+                    <div class="container">
 
-                                <img src="img/MEga_SAE.png" alt="SAE 2.01/2/5/6" class="project_images">
+                        <img src="img/MEga_SAE.png" alt="SAE 2.01/2/5/6" class="project_images">
 
-                                <h3>Méga SAE (2.01/2/5/6)<br>
-                                    <span class="sub-title">Développement d'une application</span>
-                                </h3>
+                        <h3>Méga SAE (2.01/2/5/6)<br>
+                            <span class="sub-title">Développement d'une application</span>
+                        </h3>
 
-                                <div class="Project_Links">
-                                    <a href="sae1_01_02.html" class="Project_Links_a">Non disponible</a> 
-                                </div>
+                        <div class="Project_Links">
+                            <a href="mega_sae.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
 
-                            </div>
+                    </div>
 
-                            <!-- Second Project / Sae 1Y S2 -->
+                    <!-- Second Project / Sae 1Y S2 -->
 
-                            <div class="container">
+                    <div class="container">
 
-                                <img src="img/SAE2.03.png" alt="SAE 2.03" class="project_images">
+                        <img src="img/SAE2.03.png" alt="SAE 2.03" class="project_images">
 
-                                <h3>SAE 2.03<br>
-                                    <span class="sub-title">Installation de services réseau</span>
-                                </h3>
+                        <h3>SAE 2.03<br>
+                            <span class="sub-title">Installation de services réseau</span>
+                        </h3>
 
-                                <div class="Project_Links">
-                                    <a href="sae1_03.html" class="Project_Links_a">Non disponible</a> 
-                                </div>
+                        <div class="Project_Links">
+                            <a href="sae2_03.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
 
-                            </div>
+                    </div>
 
-                        <!-- Third Project / Sae 1Y S2 -->
+                    <!-- Third Project / Sae 1Y S2 -->
 
-                        <div class="container Last_container"> <!-- container.Last_container (to acces) -->
-    
-                                <img src="img/SAE_1.04.png" alt="SAE 2.04" class="project_images">
+                    <div class="container Last_container"> <!-- container.Last_container (to acces) -->
 
-                                <h3>SAE 2.04<br>
-                                    <span class="sub-title">Exploitation d'une base de données</span>
-                                </h3>
-    
-                                <div class="Project_Links">
-                                    <a href="sae2_04.html" class="Project_Links_a">En savoir plus</a> 
-                                </div>
-    
-                            </div>
+                        <img src="img/SAE_1.04.png" alt="SAE 2.04" class="project_images">
+
+                        <h3>SAE 2.04<br>
+                            <span class="sub-title">Exploitation d'une base de données</span>
+                        </h3>
+
+                        <div class="Project_Links">
+                            <a href="sae2_04.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
+
+                    </div>
 
                 </div>
 
             </section>
 
-            <!-- SECTION 3 -->  
+            <!-- SECTION 2 -->
+
+            <section class="Table_Main" id="section2">
+                <h1>Deuxième année</h1>
+                <h2>Premier semestre</h2>
+
+                <!-- Table first year [semester 2] project -->    
+
+                <div class="Table_Project">
+
+                    <!-- First Project / Sae 1Y S2 -->
+                
+                    <div class="container firstElementNotUnder NoAccess">
+
+                        <img src="img/SAE3.01.png" alt="SAE 3.01" class="project_images">
+
+                        <h3>Projet serious game / SAE3.01<br>
+                            <span class="sub-title">Application web ludo-éducative</span>
+                        </h3>
+
+                        <div class="Project_Links">
+                            <a href="sae1_01_02.html" class="Project_Links_a">Non disponible</a> 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h2>Deuxième semestre</h2>
+
+                <!-- Table first year [semester 2] project -->    
+
+                <div class="Table_Project">
+
+                    <!-- First Project / Sae 1Y S2 -->
+                
+                    <div class="container firstElementNotUnder NoAccess">
+
+                        <img src="img/SAE4.01.png" alt="SAE 3.01" class="project_images">
+
+                        <h3>Projet / SAE4.01<br>
+                            <span class="sub-title">Infrastructure réseau virtuel</span>
+                        </h3>
+
+                        <div class="Project_Links">
+                            <a href="sae1_01_02.html" class="Project_Links_a">Non disponible</a> 
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
             
             <section class="Table_Main" id="section3">
 
@@ -234,37 +289,37 @@
 
                 <div class="Table_Project" id="Table_SAE_1Y">
 
-                        <!-- First Personnal Project -->
-                        
-                            <div class="container">
+                    <!-- First Personnal Project -->
+                
+                    <div class="container">
 
-                                <img src="img/blender_subs.png" alt="Blender" class="project_images">
+                        <img src="img/blender_subs.png" alt="Blender" class="project_images">
 
-                                <h3>Blender<br>
-                                    <span class="sub-title">Modèles 3D / Texturing / Animation</span>
-                                </h3>
+                        <h3>Blender<br>
+                            <span class="sub-title">Modèles 3D / Texturing / Animation</span>
+                        </h3>
 
-                                <div class="Project_Links">
-                                    <a href="project_perso_1.html" class="Project_Links_a">En savoir plus</a> 
-                                </div>
+                        <div class="Project_Links">
+                            <a href="project_perso_1.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
 
-                            </div>
+                    </div>
 
-                            <!-- Second Personnal Project -->
+                    <!-- Second Personnal Project -->
 
-                            <div class="container Last_container">
+                    <div class="container Last_container">
 
-                                <img src="img/hammer-logo.png" alt="Hammer" class="project_images">
+                        <img src="img/hammer-logo.png" alt="Hammer" class="project_images">
 
-                                <h3>Source engine<br>
-                                    <span class="sub-title">Hammer editor</span>
-                                </h3>
+                        <h3>Source engine<br>
+                            <span class="sub-title">Hammer editor</span>
+                        </h3>
 
-                                <div class="Project_Links">
-                                    <a href="project_perso_2.html" class="Project_Links_a">En savoir plus</a> 
-                                </div>
+                        <div class="Project_Links">
+                            <a href="project_perso_2.html" class="Project_Links_a">En savoir plus</a> 
+                        </div>
 
-                            </div>
+                    </div>
 
                 </div>
 
@@ -332,10 +387,10 @@
 
                         <h3>Mes contacts</h3>
                         <p>
-                            <span>numéro de téléphone :</span> +33 0651181095 
+                            <span>numéro de téléphone :</span> +33 06_51_18_10_95 
                             <br> 
                             <br>
-                            <span>Email professionnel :</span> arnaud.kersuall@gmail.com
+                            <span>Email professionnel :</span> arnaud.kersuall @gmail.com
                         </p>
                         
                     </article>
@@ -344,7 +399,12 @@
             </section>
 
 
-        </main> 
+        </main>
+        <script src="js/sliderSchools.js"></script>
+        <script src="framework/jquery.min.js"></script> 
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- <script src="js/borderHomeStyle.js"></script> -->
         <script src="js/dropdown.js"></script>
         <script src="js/burgermenu.js"></script>
         <script src="js/global.js"></script>

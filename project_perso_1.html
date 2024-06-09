@@ -17,14 +17,13 @@
 
       <div class="Nav_Bar" id="myTopnav">
 
-        <a data-link="Top-page" class="scroll_to">Introduction</a>  <!-- Reviens à l'hero-image(image principale) soit l'acceuil -->
+        <a data-link="Top-page" class="scroll_to">Introduction</a>
         
-          <!-- le "data-link" est lié a un identifiant (id) d'une section -->
         <a data-link="section2" class="scroll_to">Projet personnel</a>
 
-        <a data-link="section3" class="scroll_to">Mes compétences</a>
+        <a data-link="section3" class="scroll_to">Mes créations</a>
 
-          <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
+        <a data-link="section4" class="scroll_to">Mes compétences</a>
 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
         
@@ -37,6 +36,18 @@
         <figure class="button_acceuil">
           <a href="index.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
         </figure>
+
+        <article class="side_table_content">
+          <h1>Table des matières</h1>
+          <a data-link="Top-page" class="scroll_to">Introduction</a>
+        
+          <a data-link="section2" class="scroll_to">Projet personnel</a>
+  
+          <a data-link="section3" class="scroll_to">Mes créations</a>
+  
+          <a data-link="section4" class="scroll_to">Mes compétences</a>
+        </article>
+      <aside></aside>
 
         <h1 class="titles" id="Top-page">
             <span>Blender / Substance painter<br>
@@ -80,7 +91,7 @@
 
         </section>
 
-        <section class="second_section" id="section2">
+        <section class="second_section" id="section3">
 
           <h2>Mes créations</h2>
 
@@ -108,9 +119,9 @@
 
       </section>
 
-        <!-- SECTION 3 -->  
+        <!-- SECTION 4 -->  
 
-        <section class="second_section" id="section3">
+        <section class="second_section" id="section4">
 
           <h2>Mes compétences</h2>
 
@@ -311,6 +322,7 @@
 
     </section>
     </main> 
+      <script src="js/tableContentInteractive.js"></script>
       <script src="js/slider_link.js"></script>
       <script src="js/sliderProjetPersonnelBlender.js"></script>
       <script src="js/burgermenu.js"></script>

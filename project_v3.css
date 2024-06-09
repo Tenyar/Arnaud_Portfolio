@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
   
+
   html, body{
     width: 100%;  height: fit-content;
     
@@ -11,8 +12,88 @@
     overflow-x: hidden;
   }/* To make html and body take all the height and image of the browser !*/
   
+  .side_table_content{
+    width: fit-content;
+  
+    position: fixed;
+    align-self: start;
+    top: 20%; left: 1.5%;
+    gap: 0.3vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side_table_content h1 {
+    padding: 0;
+    font-size: 2vw;
+    margin: 0;
+  }
+    
+  .side_table_content a{
+    font-size: 2vh;
+    width: 22vw;
+    padding: 1em;
+    background: rgba(206, 206, 206, 0.778);
+    border-left: solid black 0.3vh;
+
+    border-radius: 0 1em 0 1em;
+
+    overflow: hidden;
+  }
+      
+  .side_table_content a:hover{
+    cursor: pointer;
+
+    border-left: solid rgb(175, 83, 171) 1vh;
+    
+    background: rgba(178, 178, 178, 0.778);
+    color: rgb(175, 83, 171);
+  }
+  /*
+  This class is like a hover but made for the javascript script that use the observer.
+  To ensure that the new-bg-color class takes precedence over the old-bg-color class,
+  we can increase the specificity of the new-bg-color class by using a CSS selector that includes both classes.
+  */
+  .side_table_content a.active-table-content-link{
+    font-weight: bold;
+    font-size: 2.15vh;
+    cursor: pointer;
+
+    border-left: solid rgb(214, 81, 74) 1.7vh;
+
+
+    color: rgb(214, 81, 74);
+  }
+
+  .side_table_content a:active{
+    background: rgba(123, 122, 122, 0.778);
+  }
+
+  .side_table_content aside {
+    display: none;
+  }
+
+  .dowload-file{
+    background-color: rgba(174, 174, 174, 0.813);
+    padding: 1em;
+
+    text-align: center;
+  
+    border: solid gray 0.25vh;
+    border-radius: 1em;
+
+    color: black;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold; text-decoration: none;
+  }
+
+  .dowload-file:hover{
+    background-color: rgba(132, 132, 132, 0.813);
+  }
+
   main {
-    margin: 0 20% 0 20%;
+    margin: 0 25% 0 25%;
   }
   
   @media screen and (min-width: 2500px) {
@@ -173,7 +254,7 @@
     color: black;
   }
   
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1400px) {
     .Nav_Bar a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -319,7 +400,7 @@
   }
 
   #img_section3{
-    width: 550px; height: 250px;
+    width: 700px; height: 350px;
     border-radius: 1em;
     box-shadow: -2px 2px 10px 0.1px #000000;
   }
@@ -486,13 +567,15 @@
     justify-content: center;
     position: relative;
 
+    box-shadow: -2px 2px 10px 0.1px #000000;
+
     border-radius: 2em;
 
     overflow: hidden;
   }
 
   .img-box img{
-    width: 60vw; height: 100%;
+    width: 100%; height: 100%;
     
     position: relative;
   }
@@ -517,8 +600,9 @@
   }
 
   @media screen and (min-width: 1400px) { /* when screen is below 1400px width*/
-    .slider {width: 600px; height: 337px;}
+    /*.slider {width: 600px; height: 337px;}
     .img-box img {width: 600px; height: 337px;}
+    */
   }
 
   #dot_container{

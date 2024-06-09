@@ -171,7 +171,7 @@ header {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .Nav_Bar a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -181,7 +181,7 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   main h1 {padding-top: 40px;} /* For keeping title in shape when the page is below 600px*/
   .Nav_Bar.responsive {position: relative;}
   .Nav_Bar.responsive .icon {
@@ -221,12 +221,9 @@ main{
   display: flex;
   
   width: 100vw; height: fit-content; 
-
-  z-index: -1;
-
 }
 
-main figure{
+main .Hero-image-arrow-scroller{
   width: 10vh; height: 10vh;
   margin: 0;
 
@@ -247,7 +244,7 @@ main figure{
   transform: translate(-50%, -50%);
 }
 
-main figure a{
+main .Hero-image-arrow-scroller a{
   display: block;
   width: 100%; height: 100%;
   background-image: url(img/arrow_low.png); background-repeat: no-repeat; background-size: 100% 100%;
@@ -259,7 +256,7 @@ main figure a{
 }
 
 /* Hover for Title-Hero-Image*/
-main figure:hover a {
+main .Hero-image-arrow-scroller:hover a {
   background-color: #000000;
   background-image: url(img/white_arrow.png);
 }
@@ -277,6 +274,8 @@ main figure:hover a {
   font-size: 10vh;  font-size: 5vw; text-shadow: 0 0 5px rgb(254, 125, 44), 0 0 5px rgb(139, 116, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+
+  z-index: -1;
 }
 
 .Title-Hero-Image h2 {
@@ -292,9 +291,11 @@ main figure:hover a {
   font-size: 5vh;  font-size: 2.5vw; text-shadow: 0 0 5px rgb(254, 125, 44), 0 0 5px rgb(139, 116, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+
+  z-index: -1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .Title-Hero-Image h1 {padding-top: 40px; margin-top: 10%;} /* For keeping title in shape when the page is below 600px*/
   .Title-Hero-Image h2 {padding-top: 50px; margin-top: 15%; font-size: 10vh;  font-size: 5vw;} /* For keeping title in shape when the page is below 600px*/
   main figure{ width: 5vh; height: 5vh;}
@@ -302,11 +303,56 @@ main figure:hover a {
 
 .Title-Hero-Image h1 span {
   color: transparent;
+  z-index: -1;
 }
 
 .Title-Hero-Image img{
   width: 100%;
+  z-index: -1;
 }
+
+/* For the switching images for each of my schools that i have been studying */
+.Top-right-page{
+  height: fit-content;  width: 25vw;
+  
+  margin: 0; padding: 1vh 0 1vh 0;
+  background: linear-gradient(to right, rgba(255,255,255,0) 10%,  rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
+
+  border-radius: 1em 0 0 1em;
+
+  position: absolute;
+  top: 44vw; right: 0%;
+  
+  z-index: 100000;
+}
+
+.slider-studies-redirect{
+  
+}
+
+.slider-studies-redirect,
+.slider-studies-redirect-logo {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.Top-right-page a{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  height: 10vw;  width: 100%;
+  
+}
+
+.Top-right-page a img{
+  height: 80%;  width: 65%;
+}
+
 
 #first_section h2{
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  font-size: 75px; white-space: pre-wrap;
@@ -329,7 +375,7 @@ text-shadow: 2.5px 2.5px #ffaa00;
   font-size: 28px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #first_section p {line-height: 25px;}
 }
 
@@ -349,12 +395,12 @@ text-shadow: 2.5px 2.5px #ffaa00;
 }
 
 @keyframes rainbow-animation {
-    to {
-        background-position: 7000vh;
-    }
+  to {
+      background-position: 7000vh;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #Hero-image h1 {font-size: 40px;}
   #first_section h2 {font-size: 40px;}
   #first_section p {font-size: 20px;}
@@ -387,7 +433,7 @@ text-shadow: 2.5px 2.5px #ffaa00;
   .Table_Main h1 {font-size: 20px;}
 }
 
-#Table_SAE_2Y .container:not(.container.Last_container) a{ /* don't take the ".container Last_container" class. We are basically excluding this class from all the other ".container" class.*/
+.NoAccess a{ /* don't take the ".container Last_container" class. We are basically excluding this class from all the other ".container" class.*/
   cursor: default;
   pointer-events: none;
 }
@@ -399,6 +445,7 @@ text-shadow: 2.5px 2.5px #ffaa00;
 
  .Table_Project {
   margin: 0 0 5% 0;
+  height: fit-content;
   
   border-collapse: collapse;
 
@@ -419,24 +466,21 @@ margin: auto;
 font-size: 1em; text-align: center; color: rgb(0, 0, 0);
 }
 
-
-@media screen and (max-width: 980px) {
-  .Table_Project {flex-wrap: wrap; border-left: 0.1vh solid black; font-size: 0.75em; width: min-content;}
-  #Table_SAE_1Y_2 div {border-left: none; }
-  .container.Last_container:last-child { border-right: 0.1vh solid black;}
-}
 /* Delete Right border of the first <td> in each <tr> */
-
 .Table_Project div {
-  border-left: none;
   border-top: none;
 }
 
-
-@media screen and (min-width: 980px) {
-  #Table_SAE_1Y_2 .container{border-left: 0.1vh solid black; }
+@media screen and (max-width: 980px) {
+  .Table_Project {flex-wrap: wrap; font-size: 0.75em; width: min-content;}
+  #Table_SAE_1Y_2 div {border-left: none; }
+  .container.Last_container:last-child { border-right: 0.1vh solid black;}
 }
 
+@media screen and (min-width: 980px) {
+  #Table_SAE_1Y_2 .container{border-left: 0.1vh solid black;}
+  .Table_Project div {border-left: none;}
+}
 
 .container.Last_container {
   border-right: none;
@@ -452,6 +496,18 @@ font-size: 1em; text-align: center; color: rgb(0, 0, 0);
   position: relative;
 
   display: flex;  flex-direction: column; justify-content: center; vertical-align: middle;
+}
+
+.container.firstElementUnder{
+  border-left: 0.1vh solid rgb(0, 0, 0);
+  border-right: 0.1vh solid rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 980px) {
+  .container.firstElementNotUnder{border-right: none;}
+}
+@media screen and (max-width: 980px) {
+  .container.firstElementNotUnder{border-right: 0.1vh solid black;}
 }
 
 .container img, a, span {

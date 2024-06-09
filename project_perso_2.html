@@ -26,8 +26,6 @@
 
           <!-- Vu qu'un élément ne peut avoir qu'un seul id(identifiant) je mets ici celui qui occupe déjà la place (car il est utilisé avec du css) -->
 
-        <a data-link="section4" class="scroll_to">Redirections</a>
-        
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowDropdownContent()">☰</a>
         
       </div>
@@ -39,6 +37,17 @@
         <figure class="button_acceuil">
           <a href="index.html"></a><span class="tooltiptext">Retourner à l'acceuil</span>
         </figure>
+
+        <article class="side_table_content">
+          <h1>Table des matières</h1>
+          <a data-link="Top-page" class="scroll_to">Introduction</a> 
+        
+          <a data-link="section2" class="scroll_to">Carte / Niveau</a>
+
+          <a data-link="section3" class="scroll_to">Mes compétences</a>
+
+        </article>
+      <aside></aside>
 
         <h1 class="titles" id="Top-page">
             <span>Hammer / Source engine<br>
@@ -80,9 +89,7 @@
                 Voici l'évolution des différentes "levels" / cartes (maps) que j'ai créées au fil des années sur le logiciel "Hammer" utilisant le moteur de jeu (Source Engine).<br>
                 <br>
                 Voici quelques liens qui peuvent illustrer en vidéo certaines images :
-                <br>
-                <a href="https://youtu.be/-jG9Hm7bAfE">Temple Tython</a>
-                <br>
+                <a href="https://youtu.be/-jG9Hm7bAfE">Temple Tython</a>,
                 <a href="https://www.youtube.com/watch?v=faUUQiMZfDI">Maison des maîtres</a>
 
               </p>
@@ -323,6 +330,7 @@
     </section>
 
     </main> 
+      <script src="js/tableContentInteractive.js"></script>
       <script src="js/slider_link.js"></script>
       <script src="js/sliderProjetPersonnelLevelDesign.js"></script>
       <script src="js/burgermenu.js"></script>
